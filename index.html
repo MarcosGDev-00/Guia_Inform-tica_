@@ -165,7 +165,7 @@ margin: 0 auto;
           <p>
             Um guia para estudantes do Técnico integrado ao ensino médio do IFPA - Campus Breves. Este guia serve para todos os eixos, e irá te ajudar em seu tempo de estudo no Instituto.
           </p>
-          <button>
+          <button id="downloadButton">
             Fazer Download
           </button>
           <button>
@@ -182,8 +182,28 @@ margin: 0 auto;
       Curso Técnico em Informática 2023
     </div>
   </footer>
+ 
+  <script>
+    document.getElementById('downloadButton').addEventListener('click', function () {
+    // URL do arquivo que será baixado
+    var fileUrl = '\Users\marco\OneDrive\Documentos\IFPA\PI\GuiaDeInfo\Download\AtividadeHistoria';
+    // Nome do arquivo que será salvo localmente
+    var fileName = 'imagem.png';
+    // Criar um elemento de link temporário
+    var link = document.createElement('a');
+    // Configurar o atributo 'href' com a URL do arquivo
+    link.href = fileUrl;
+    // Configurar o atributo 'download' com o nome do arquivo
+    link.download = fileName;
+    // Adicionar o link ao corpo do documento
+    document.body.appendChild(link);
+    // Simular um clique no link para iniciar o download
+    link.click();
+    // Remover o link do corpo do documento
+    document.body.removeChild(link);
+});
 
-  <script src="script/script.js"></script>
+  </script>
 </div>
 </body>
 </html>
