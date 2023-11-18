@@ -5,156 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Guia de Informática</title>
   <link rel="stylesheet" href="css/main.css">
-  <style>
-    body {
-      display: grid;
-      margin: auto;
-      grid-template-columns: repeat(8 , 192px);
-      grid-template-rows: repeat(7 , 102px);
-    }
-
-    header.header {
-      grid-column: 2 / 8;
-      grid-row: 1;
-    }
-
-    div.header_functions {
-      grid-column: 2 / 8;
-      display: flex;
-      width: 100%;
-      height: 100%;
-      align-items: center;
-      border-bottom: 5px solid rgba(3, 3, 40, 0.786);
-    }
-
-    div.logo {
-      width: 70px;
-      height: 60px;
-      margin: 0px 0px 0px 2px;
-    }
-
-    div.logo img{
-      border-radius: 50%;
-      height: 100%;
-      width: 100%;
-    } 
-
-    div.menu {
-    height: 60px;
-    width: 100%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-  }
-
-  div.menu ul {
-    display: flex;
-    margin: 0;
-    padding: 0;
-  }
-
-  div.menu ul li {
-    list-style-type: none;
-    margin-left: 150px;
-  }
-
-  div.menu ul li a {
-    text-decoration: none;
-    color: rgb(4, 4, 44);
-    font-size: 1.2rem;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-  div.caminho {
-    grid-column: 2;
-    grid-row: 2;
-    margin-top: 20px;
-  }
-
-  div.caminho a {
-    text-decoration: none;
-    color: rgb(7, 7, 50);
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-  main {
-    grid-column: 2 / 8;
-    grid-row: 2;
-    padding: 20px 0;
-    margin-top: 20px;
-  }
-
-  section.container {
-    display: flex;
-  }
-
-  article.conteudoContainer {
-    width: 50%;
-    height: 450px;
-    padding-right: 200px;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 150px 200px 65px;
-  }
-
-  article.conteudoContainer h1 {
-    color: rgb(5, 5, 41);
-    font-size: 3rem;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: lighter;
-  }
-
-  article.conteudoContainer p {
-    color: rgb(5, 5, 41);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2rem;
-  }
-
-  article.conteudoContainer button {
-    background-color: rgb(5, 5, 41);
-    color: white;
-    border: none;
-    border-radius: 40px;
-    width: 50%;
-    height: 45px;
-  }
-
-  article.imgContainer {
-    width: 50%;
-  }
-
-  article.imgContainer img {
-    height: 400px;
-    width: 600px;
-    float: right;
-  }
-
-  footer {
-    grid-column: 2 / 8;
-    grid-row: 7;
-    margin-top: 50px;
-    border-top: 5px solid rgb(4, 4, 39);
-    width: 100%;
-    text-align: center;
-    padding-top: 15px;
-  }
-
-  div.conteudoFooter {
-    color: rgb(4, 4, 39);
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0 auto;
-  }
-  </style>
 </head>
 <body>
   <header class="header">
     <div class="header_functions">
       <div class="logo">
         <a href="index.html">
-          <img src="https://static.significados.com.br/foto/da4f-cor-cinza-significados.jpg" alt="imagemteste">
-                </div>
+          <img src="img/logoPi.png" alt="imagemteste">
         </a>
-    </div>
+      </div>
   </header>
   <div class="caminho">
     <a href="index.html">Home</a> &gt;
@@ -167,12 +26,11 @@
             Projeto Integrador 2023
           </h1>
           <p>
-            Este projeto foi criado pela turma de Informática de 2022 com o auxílio de professores. <br>
-            Projeto
+            Este projeto foi criado pela turma de Informática de 2022 com o axílio de professores.
           </p>
         </article>
-        <article class="imgContainer">
-          <img src="https://static.significados.com.br/foto/da4f-cor-cinza-significados.jpg" alt="LogoProjeto">
+        <article class="imagemContainer">
+          <img src="img/logoPi.png" alt="LogoProjeto">
         </article>
     </section>
   </main>
@@ -181,7 +39,6 @@
       Curso Técnico em Informática 2023
     </div>
   </footer>
-
   <script src="script/script.js"></script>
 </div>
 </body>

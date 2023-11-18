@@ -7,198 +7,6 @@
   <title>Guia de Informática</title>
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-  <style>
-    body {
-      display: grid;
-      margin: auto;
-      grid-template-columns: repeat(8, 192px);
-      grid-template-rows: repeat(7, 102px);
-    }
-
-    header.header {
-      grid-column: 2 / 8;
-      grid-row: 1;
-    }
-
-    div.header_functions {
-      grid-column: 2 / 8;
-      display: flex;
-      width: 100%;
-      height: 100%;
-      align-items: center;
-      border-bottom: 5px solid rgba(3, 3, 40, 0.786);
-    }
-
-    div.logo {
-      width: 70px;
-      height: 60px;
-      margin: 0px 0px 0px 2px;
-    }
-
-    div.logo img {
-      border-radius: 50%;
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-    }
-
-    div.menu {
-      height: 60px;
-      width: 100%;
-      display: flex;
-      align-items: flex-end;
-      justify-content: flex-end;
-    }
-
-    div.menu ul {
-      display: flex;
-      margin: 0;
-      padding: 0;
-    }
-
-    div.menu ul li {
-      list-style-type: none;
-      margin-left: 150px;
-    }
-
-    div.menu ul li a {
-      text-decoration: none;
-      color: rgb(4, 4, 44);
-      font-size: 1.2rem;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
-    main {
-      grid-column: 2 / 8;
-      padding: 20px 0;
-      margin-top: 20px;
-    }
-
-    section.container {
-      display: flex;
-    }
-
-    article.conteudoContainer {
-      width: 50%;
-      height: 450px;
-      padding-right: 200px;
-      display: grid;
-      grid-template-columns: 100%;
-      grid-template-rows: 150px 200px 65px;
-    }
-
-    article.conteudoContainer h1 {
-      color: rgb(5, 5, 41);
-      font-size: 3rem;
-      font-family: Arial, Helvetica, sans-serif;
-      font-weight: lighter;
-    }
-
-    article.conteudoContainer p {
-      color: rgb(5, 5, 41);
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 1.2rem;
-    }
-
-    article.conteudoContainer button {
-      background-color: rgb(5, 5, 41);
-      color: white;
-      border: none;
-      border-radius: 40px;
-      width: 50%;
-      height: 45px;
-      cursor: pointer;
-    }
-
-    article.imgContainer {
-      width: 50%;
-    }
-
-    article.imgContainer img {
-      border-radius: 50%;
-      height: 400px;
-      width: 400px;
-      float: right;
-      object-fit: cover;
-    }
-
-    footer {
-      grid-column: 2 / 8;
-      grid-row: 7;
-      margin-top: 50px;
-      border-top: 5px solid rgb(4, 4, 39);
-      width: 100%;
-      text-align: center;
-      padding-top: 15px;
-    }
-
-    div.conteudoFooter {
-      color: rgb(4, 4, 39);
-      font-family: Arial, Helvetica, sans-serif;
-      margin: 0 auto;
-    }
-
-    #teste {
-      text-decoration: none;
-      font-family: Arial, Helvetica, sans-serif;
-      color: white;
-    }
-
-    section.accordionPrefacio {
-      grid-column: 2 / 8;
-      grid-row: 6;
-    }
-
-    div.accordion {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-    }
-
-    div.accordion-item {
-      margin-bottom: 2px;
-    }
-
-    div.accordion-item-header {
-      display: flex;
-      align-items: center;
-      content: flex-end;
-      height: 40px;
-      padding: 0;
-      cursor: pointer;
-    }
-
-    div.accordion-item-header h1 {
-      color: rgb(4, 4, 44);
-      font-family: Arial, Helvetica, sans-serif;
-      padding: 10px;
-      cursor: pointer;
-    }
-
-    div.accordion-item-header i {
-      color: white;
-      font-size: 1rem;
-      background-color: rgb(4, 4, 44);
-      border: 2px solid rgb(4, 4, 44);
-      padding: 10px;
-      border-radius: 50%;
-      cursor: pointer;
-      width: 13px;
-      height: 13px;
-      align-items: center;
-      text-align: center;
-    }
-
-    div.accordion-item-header:hover {
-      background-color: #f3f3f3;
-      border-radius: 40px;
-    }
-
-    div.accordion-item-body {
-      display: none;
-      padding: 10px;
-    }
-  </style>
 </head>
 
 <body>
@@ -252,76 +60,461 @@
             Aqui vamos fazer algumas breves apresentações, mas sempre com algum
             link (Não encontrei nenhum link no texto.) para você clicar e encontrar mais
             informações. <br>
-            VEM COM A GENTE!
-
+          </p>
+          <p>
+            <strong>VEM COM A GENTE!</strong>
           </p>
         </article>
       </div>
     </section>
 
+    <section class="apresentacao">
+      <div class="apresentacaoConteudo">
+        <h1>Prefácio</h1>
+        <article class="apresentacaoContainer">
+          <p>
+            Este guia foi cuidadosamente elaborado com o intuito de ser o companheiro
+            confiável de cada aluno do curso de técnico integrado ao ensino médio em sua
+            jornada educacional. Aqui você encontrará não apenas um conjunto de regras, mas
+            sim um mapa para desenvolver habilidades, cultivar hábitos produtivos e trilhar o
+            caminho que leva ao sucesso acadêmico e pessoal.
+          </p>
+          <p>
+            Nossa intenção é clara: fornecer orientação prática e conselhos valiosos que
+            o ajude a enfrentar os desafios da vida estudantil com confiança, desde questões da
+            vida acadêmica até às disciplinas e carga horária do curso. Este guia abrangente
+            aborda diversos aspectos da experiência escolar.
+          </p>
+          <p>
+            À medida que você se aprofunda nas páginas que se seguem, lembre-se de
+            que o conhecimento é uma jornada e que cada passo que você dá para adquirir
+            sabedoria é uma realização em si mesmo. Este guia está aqui para apoiá-lo,
+            inspirá-lo e lembrá-lo de que o sucesso não é apenas alcançar metas, mas também
+            abraçar o crescimento pessoal ao longo do caminho.
+          </p>
+          <p>
+            Que este "Guia do Estudante do IFPA Campus Breves" abra a sua mente,
+            sendo o aliado que o motiva e o recurso que o capacita. Estamos ansiosos para
+            testemunhar suas conquistas e ver como você transforma essas regras em
+            ferramentas para moldar um futuro brilhante.
+          </p>
+        </article>
+      </div>
+    </section>
+    <div class="apresentacaoConteudo">
+      <h1>GUIA DO TÉCNICO INTEGRADO
+      </h1>
+      <article class="apresentacaoContainer">
+        <p> O objetivo do guia é orientar e fornecer informações úteis para os estudantes
+          do IFPA - campus Breves.
+        </p>
+      </article>
+    </div>
     <section class="accordionPrefacio">
       <div class="accordion">
+
         <div class="accordion-item">
           <div class="accordion-item-header" onclick="toggleAccordion(this)">
-            <h1>
-              Prefácio
-            </h1>
             <i class="fa-solid fa-arrow-down"></i>
+            <h1>
+              1. Regulamento didático pedagógico do IFPA.
+            </h1>
           </div>
           <div class="accordion-item-body">
-            <p>
-              Este guia foi cuidadosamente elaborado com o intuito de ser o companheiro
-              confiável de cada aluno do curso de técnico integrado ao ensino médio em sua
-              jornada educacional. Aqui você encontrará não apenas um conjunto de regras, mas
-              sim um mapa para desenvolver habilidades, cultivar hábitos produtivos e trilhar o
-              caminho que leva ao sucesso acadêmico e pessoal.
-            </p>
-            <p>
-              Nossa intenção é clara: fornecer orientação prática e conselhos valiosos que
-              o ajude a enfrentar os desafios da vida estudantil com confiança, desde questões da
-              vida acadêmica até às disciplinas e carga horária do curso. Este guia abrangente
-              aborda diversos aspectos da experiência escolar.
-            </p>
-            <p>
-              À medida que você se aprofunda nas páginas que se seguem, lembre-se de
-              que o conhecimento é uma jornada e que cada passo que você dá para adquirir
-              sabedoria é uma realização em si mesmo. Este guia está aqui para apoiá-lo,
-              inspirá-lo e lembrá-lo de que o sucesso não é apenas alcançar metas, mas também
-              abraçar o crescimento pessoal ao longo do caminho.
-            </p>
-            <p>
-              Que este "Guia do Estudante do IFPA Campus Breves" abra a sua mente,
-              sendo o aliado que o motiva e o recurso que o capacita. Estamos ansiosos para
-              testemunhar suas conquistas e ver como você transforma essas regras em
-              ferramentas para moldar um futuro brilhante.
-            </p>
-
+            <p>Você sabia que no regulamento didático do IFPA, existem normas, diretrizes
+              e procedimentos que orientam a organização do ensino e a vida acadêmica na
+              instituição? Pois bem, esse regulamento é dividido em doze partes que abordam
+              uma série de questões importantes relacionadas à vida acadêmica, incluindo
+              disciplinas, avaliação, frequência, entre outras coisas.</p>
           </div>
         </div>
 
         <div class="accordion-item">
           <div class="accordion-item-header" onclick="toggleAccordion(this)">
-            <h1>
-              Item 1
-            </h1>
             <i class="fa-solid fa-arrow-down"></i>
+            <h1>
+              2. Bases da pesquisa.
+            </h1>
           </div>
           <div class="accordion-item-body">
-            <p>Conteúdo do Item 1.</p>
+            <p>O regulamento didático pedagógico do IFPA está baseado na LDB (Lei de
+              Diretrizes e Bases da educação nacional) e no Conselho Nacional de Educação
+              (CNE), das Diretrizes Curriculares Nacionais dos cursos de Educação Básica e
+              Ensino Superior, no Plano de Desenvolvimento Institucional (PDI), no Projeto
+              Pedagógico Institucional e no regimento geral do IFPA.
+            </p>
           </div>
         </div>
 
-        <div class="accordion-item">
-          <div class="accordion-item-header" onclick="toggleAccordion(this)">
-            <h1>
-              Item 1
-            </h1>
-            <i class="fa-solid fa-arrow-down"></i>
+        <div class="accordion">
+
+          <div class="accordion-item">
+            <div class="accordion-item-header" onclick="toggleAccordion(this)">
+              <i class="fa-solid fa-arrow-down"></i>
+              <h1>
+                3. Atividades de ensino, pesquisa e inovação.
+              </h1>
+            </div>
+            <div class="accordion-item-body">
+              <p>
+                O objetivo das atividades de ensino é desenvolver ações que visem o
+                desenvolvimento local, regional e nacional, além de melhorar a qualidade do ensino.
+                Estimular o desenvolvimento de projetos integradores e atividades interdisciplinares.
+                Identificar demandas científico-tecnológicas, as quais podem resultar em
+                atualizações nos currículos de cursos ofertados no IFPA.
+              </p>
+              <p>
+                Um horário de aula sempre possuirá 50min de duração, independente do
+                curso ou turno, exceto pelos cursos oferecidos pelo PRONATEC, os quais possuirão
+                60min. Para a educação a distância, o método de ensino deverá utilizar técnicas
+                envolvendo tecnologias de informação e comunicação. Para cursos técnicos de
+                nível médio presenciais, podem haver atividades não presenciais, desde que haja
+                suporte tecnológico e atendimento por tutores e docentes. A duração de cursos
+                técnicos integrados ao Ensino Médio deverá contemplar as cargas horárias mínimas
+                9
+                destinadas ao Ensino Médio e a carga horária da formação profissional, sendo o
+                total de 2.400 horas, visto que são 1.200 horas para a formação geral, acrescidas
+                das cargas horárias mínimas de cada curso previstas no Catálogo Nacional dos
+                Cursos Técnicos (CNTC)
+              </p>
+            </div>
           </div>
-          <div class="accordion-item-body">
-            <p>Conteúdo do Item 1.</p>
+
+          <div class="accordion-item">
+            <div class="accordion-item-header" onclick="toggleAccordion(this)">
+              <i class="fa-solid fa-arrow-down"></i>
+              <h1>
+                4. Corpo docente.
+              </h1>
+            </div>
+            <div class="accordion-item-body">
+              <p>
+                O corpo docente é composto por professores efetivos do magistério do
+                ensino básico, técnico e tecnológico, bem como por professores substitutos,
+                visitantes, temporários e aprovados em concurso público ou processo seletivo
+                simplificado. Esses professores têm muitas responsabilidades, como ajudar a
+                planejar, ensinar as matérias, criar um plano de trabalho, ajudar os alunos a
+                aprender, pensar em formas de ajudar quem precisa recuperar as notas, dar aulas,
+                ajudar a escola a se conectar com a comunidade, se reunir com outros professores
+                para planejar as aulas e participar de grupos de pessoas que tomam decisões
+                importantes sobre os cursos.
+              </p>
+              <p>
+                Mas também existe o corpo discente, que é composto pelos alunos que têm
+                que ser ativos com a instituição e devem ter sua matrícula registrada no Sistema de
+                Gerenciamento Acadêmico (SIGAA). Mas não se preocupe, pois existe o Manual do
+                Estudante que contém todas as informações do curso.
+              </p>
+              <p>
+                E sobre as matérias e atividades que o estudante precisa fazer para concluir
+                o curso? Estas estão fundamentadas na Matriz Curricular, é importante seguir a
+                ordem das matérias e cumprir a carga horária de cada uma delas.
+              </p>
+              <p>
+                Também é necessário compreender sobre os Componentes Curriculares, que
+                são as disciplinas que fazem parte do curso e o papel muito importante que os
+                professores têm.
+              </p>
+              <p>
+                A prática profissional é uma atividade acadêmica obrigatória em cursos
+                superiores de graduação e em cursos técnicos de nível médio. Onde inclui
+                diferentes situações de vivência, aprendizagem e trabalho, como projetos de
+                pesquisa ou extensão, estudos de caso, visitas técnicas, laboratórios, entre outros.
+                O Projeto Pedagógico do Curso (PPC) deve prever a carga horária da Prática
+                Profissional de acordo com as diretrizes curriculares do curso
+              </p>
+            </div>
           </div>
-        </div>
+
+          <div class="accordion-item">
+            <div class="accordion-item-header" onclick="toggleAccordion(this)">
+              <i class="fa-solid fa-arrow-down"></i>
+              <h1>
+                5. O ano letivo.
+              </h1>
+            </div>
+            <div class="accordion-item-body">
+              <p>Você sabia que no regulamento didático do IFPA, existem normas, diretrizes
+                e procedimentos que orientam a organização do ensino e a vida acadêmica na
+                instituição? Pois bem, esse regulamento é dividido em doze partes que abordam
+                uma série de questões importantes relacionadas à vida acadêmica, incluindo
+                disciplinas, avaliação, frequência, entre outras coisas.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-item-header" onclick="toggleAccordion(this)">
+              <i class="fa-solid fa-arrow-down"></i>
+              <h1>
+                6. Regras
+              </h1>
+            </div>
+            <div class="accordion-item-body">
+              <p>Você sabia que no regulamento didático do IFPA, existem normas, diretrizes
+                e procedimentos que orientam a organização do ensino e a vida acadêmica na
+                instituição? Pois bem, esse regulamento é dividido em doze partes que abordam
+                uma série de questões importantes relacionadas à vida acadêmica, incluindo
+                disciplinas, avaliação, frequência, entre outras coisas.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-item-header" onclick="toggleAccordion(this)">
+              <i class="fa-solid fa-arrow-down"></i>
+              <h1>
+                7. Matriz Curricular:
+              </h1>
+            </div>
+            <div class="accordion-item-body">
+              <p>Você sabia que no regulamento didático do IFPA, existem normas, diretrizes
+                e procedimentos que orientam a organização do ensino e a vida acadêmica na
+                instituição? Pois bem, esse regulamento é dividido em doze partes que abordam
+                uma série de questões importantes relacionadas à vida acadêmica, incluindo
+                disciplinas, avaliação, frequência, entre outras coisas.</p>
+            </div>
+          </div>
+          
+          <div class="accordion-item">
+            <div class="accordion-item-header" onclick="toggleAccordion(this)">
+              <i class="fa-solid fa-arrow-down"></i>
+              <h1>
+                8. Componentes Curriculares:
+              </h1>
+            </div>
+            <div class="accordion-item-body">
+              <p>Você sabia que no regulamento didático do IFPA, existem normas, diretrizes
+                e procedimentos que orientam a organização do ensino e a vida acadêmica na
+                instituição? Pois bem, esse regulamento é dividido em doze partes que abordam
+                uma série de questões importantes relacionadas à vida acadêmica, incluindo
+                disciplinas, avaliação, frequência, entre outras coisas.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-item-header" onclick="toggleAccordion(this)">
+              <i class="fa-solid fa-arrow-down"></i>
+              <h1>
+                9. Prática Profissional:
+              </h1>
+            </div>
+            <div class="accordion-item-body">
+              <p>Você sabia que no regulamento didático do IFPA, existem normas, diretrizes
+                e procedimentos que orientam a organização do ensino e a vida acadêmica na
+                instituição? Pois bem, esse regulamento é dividido em doze partes que abordam
+                uma série de questões importantes relacionadas à vida acadêmica, incluindo
+                disciplinas, avaliação, frequência, entre outras coisas.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-item-header" onclick="toggleAccordion(this)">
+              <i class="fa-solid fa-arrow-down"></i>
+              <h1>
+                10.Comportamento
+              </h1>
+            </div>
+            <div class="accordion-item-body">
+              <p>Você sabia que no regulamento didático do IFPA, existem normas, diretrizes
+                e procedimentos que orientam a organização do ensino e a vida acadêmica na
+                instituição? Pois bem, esse regulamento é dividido em doze partes que abordam
+                uma série de questões importantes relacionadas à vida acadêmica, incluindo
+                disciplinas, avaliação, frequência, entre outras coisas.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-item-header" onclick="toggleAccordion(this)">
+              <i class="fa-solid fa-arrow-down"></i>
+              <h1>
+                11. Certificados e diplomas.
+              </h1>
+            </div>
+            <div class="accordion-item-body">
+              <p>Você sabia que no regulamento didático do IFPA, existem normas, diretrizes
+                e procedimentos que orientam a organização do ensino e a vida acadêmica na
+                instituição? Pois bem, esse regulamento é dividido em doze partes que abordam
+                uma série de questões importantes relacionadas à vida acadêmica, incluindo
+                disciplinas, avaliação, frequência, entre outras coisas.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-item-header" onclick="toggleAccordion(this)">
+              <i class="fa-solid fa-arrow-down"></i>
+              <h1>
+                12.Registro das informações dos estudantes
+              </h1>
+            </div>
+            <div class="accordion-item-body">
+              <p>Você sabia que no regulamento didático do IFPA, existem normas, diretrizes
+                e procedimentos que orientam a organização do ensino e a vida acadêmica na
+                instituição? Pois bem, esse regulamento é dividido em doze partes que abordam
+                uma série de questões importantes relacionadas à vida acadêmica, incluindo
+                disciplinas, avaliação, frequência, entre outras coisas.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-item-header" onclick="toggleAccordion(this)">
+              <i class="fa-solid fa-arrow-down"></i>
+              <h1>
+                13.Diário de Classe
+              </h1>
+            </div>
+            <div class="accordion-item-body">
+              <p>Você sabia que no regulamento didático do IFPA, existem normas, diretrizes
+                e procedimentos que orientam a organização do ensino e a vida acadêmica na
+                instituição? Pois bem, esse regulamento é dividido em doze partes que abordam
+                uma série de questões importantes relacionadas à vida acadêmica, incluindo
+                disciplinas, avaliação, frequência, entre outras coisas.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-item-header" onclick="toggleAccordion(this)">
+              <i class="fa-solid fa-arrow-down"></i>
+              <h1>
+                14.Mudança de horário das aulas
+              </h1>
+            </div>
+            <div class="accordion-item-body">
+              <p>Você sabia que no regulamento didático do IFPA, existem normas, diretrizes
+                e procedimentos que orientam a organização do ensino e a vida acadêmica na
+                instituição? Pois bem, esse regulamento é dividido em doze partes que abordam
+                uma série de questões importantes relacionadas à vida acadêmica, incluindo
+                disciplinas, avaliação, frequência, entre outras coisas.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-item-header" onclick="toggleAccordion(this)">
+              <i class="fa-solid fa-arrow-down"></i>
+              <h1>
+                15.Mobilidade estudantil
+              </h1>
+            </div>
+            <div class="accordion-item-body">
+              <p>Você sabia que no regulamento didático do IFPA, existem normas, diretrizes
+                e procedimentos que orientam a organização do ensino e a vida acadêmica na
+                instituição? Pois bem, esse regulamento é dividido em doze partes que abordam
+                uma série de questões importantes relacionadas à vida acadêmica, incluindo
+                disciplinas, avaliação, frequência, entre outras coisas.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-item-header" onclick="toggleAccordion(this)">
+              <i class="fa-solid fa-arrow-down"></i>
+              <h1>
+                15.1. Mobilidade de estudantes internos
+              </h1>
+            </div>
+            <div class="accordion-item-body">
+              <p>Você sabia que no regulamento didático do IFPA, existem normas, diretrizes
+                e procedimentos que orientam a organização do ensino e a vida acadêmica na
+                instituição? Pois bem, esse regulamento é dividido em doze partes que abordam
+                uma série de questões importantes relacionadas à vida acadêmica, incluindo
+                disciplinas, avaliação, frequência, entre outras coisas.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-item-header" onclick="toggleAccordion(this)">
+              <i class="fa-solid fa-arrow-down"></i>
+              <h1>
+                16.Intercâmbio
+              </h1>
+            </div>
+            <div class="accordion-item-body">
+              <p>Você sabia que no regulamento didático do IFPA, existem normas, diretrizes
+                e procedimentos que orientam a organização do ensino e a vida acadêmica na
+                instituição? Pois bem, esse regulamento é dividido em doze partes que abordam
+                uma série de questões importantes relacionadas à vida acadêmica, incluindo
+                disciplinas, avaliação, frequência, entre outras coisas.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-item-header" onclick="toggleAccordion(this)">
+              <i class="fa-solid fa-arrow-down"></i>
+              <h1>
+                17.Atendimento domiciliar
+              </h1>
+            </div>
+            <div class="accordion-item-body">
+              <p>Você sabia que no regulamento didático do IFPA, existem normas, diretrizes
+                e procedimentos que orientam a organização do ensino e a vida acadêmica na
+                instituição? Pois bem, esse regulamento é dividido em doze partes que abordam
+                uma série de questões importantes relacionadas à vida acadêmica, incluindo
+                disciplinas, avaliação, frequência, entre outras coisas.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-item-header" onclick="toggleAccordion(this)">
+              <i class="fa-solid fa-arrow-down"></i>
+              <h1>
+                18.Avaliação da aprendizagem
+              </h1>
+            </div>
+            <div class="accordion-item-body">
+              <p>Você sabia que no regulamento didático do IFPA, existem normas, diretrizes
+                e procedimentos que orientam a organização do ensino e a vida acadêmica na
+                instituição? Pois bem, esse regulamento é dividido em doze partes que abordam
+                uma série de questões importantes relacionadas à vida acadêmica, incluindo
+                disciplinas, avaliação, frequência, entre outras coisas.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-item-header" onclick="toggleAccordion(this)">
+              <i class="fa-solid fa-arrow-down"></i>
+              <h1>
+                19.Aproveitamento dos estudos
+              </h1>
+            </div>
+            <div class="accordion-item-body">
+              <p>Você sabia que no regulamento didático do IFPA, existem normas, diretrizes
+                e procedimentos que orientam a organização do ensino e a vida acadêmica na
+                instituição? Pois bem, esse regulamento é dividido em doze partes que abordam
+                uma série de questões importantes relacionadas à vida acadêmica, incluindo
+                disciplinas, avaliação, frequência, entre outras coisas.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-item-header" onclick="toggleAccordion(this)">
+              <i class="fa-solid fa-arrow-down"></i>
+              <h1>
+                20.Cancelamento de vínculo institucional
+              </h1>
+            </div>
+            <div class="accordion-item-body">
+              <p>Você sabia que no regulamento didático do IFPA, existem normas, diretrizes
+                e procedimentos que orientam a organização do ensino e a vida acadêmica na
+                instituição? Pois bem, esse regulamento é dividido em doze partes que abordam
+                uma série de questões importantes relacionadas à vida acadêmica, incluindo
+                disciplinas, avaliação, frequência, entre outras coisas.</p>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <div class="accordion-item-header" onclick="toggleAccordion(this)">
+              <i class="fa-solid fa-arrow-down"></i>
+              <h1>
+                21.Educação a distância
+              </h1>
+            </div>
+            <div class="accordion-item-body">
+              <p>Você sabia que no regulamento didático do IFPA, existem normas, diretrizes
+                e procedimentos que orientam a organização do ensino e a vida acadêmica na
+                instituição? Pois bem, esse regulamento é dividido em doze partes que abordam
+                uma série de questões importantes relacionadas à vida acadêmica, incluindo
+                disciplinas, avaliação, frequência, entre outras coisas.</p>
+            </div>
+          </div>
+
+          
     </section>
 
   </main>
