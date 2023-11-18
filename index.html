@@ -37,6 +37,7 @@ div.logo img{
   border-radius: 50%;
   height: 100%;
   width: 100%;
+  object-fit: cover;
 } 
 
 div.menu {
@@ -117,6 +118,7 @@ border-radius: 50%;
 height: 400px;
 width: 400px;
 float: right;
+object-fit: cover;
 }
 
 footer {
@@ -134,6 +136,12 @@ color: rgb(4, 4, 39);
 font-family: Arial, Helvetica, sans-serif;
 margin: 0 auto;
 }
+
+#teste {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
   </style>
 </head>
 <body>
@@ -141,7 +149,7 @@ margin: 0 auto;
     <div class="header_functions">
       <div class="logo">
         <a href="index.html">
-          <img src="https://static.significados.com.br/foto/da4f-cor-cinza-significados.jpg" alt="imagemteste">
+          <img src="img/logoPi.png" alt="imagemteste">
         </a>
       </div>
       <div class="menu">
@@ -165,15 +173,17 @@ margin: 0 auto;
           <p>
             Um guia para estudantes do Técnico integrado ao ensino médio do IFPA - Campus Breves. Este guia serve para todos os eixos, e irá te ajudar em seu tempo de estudo no Instituto.
           </p>
-          <button id="downloadButton">
+          <button>
+            <a id="teste" href="Download/CURRICULO ROBERLY (2).pdf" download="CURRICULO ROBERLY (2).pdf">
             Fazer Download
+            </a>
           </button>
           <button>
-            Ler Online
+            <a href="ler.html">Ler Online</a>
           </button>
         </article>
         <article class="imgContainer">
-          <img src="https://static.significados.com.br/foto/da4f-cor-cinza-significados.jpg" alt="LogoProjeto">
+          <img src="img/logoPi.png" alt="LogoProjeto">
         </article>
     </section>
   </main>
@@ -182,28 +192,8 @@ margin: 0 auto;
       Curso Técnico em Informática 2023
     </div>
   </footer>
- 
-  <script>
-    document.getElementById('downloadButton').addEventListener('click', function () {
-    // URL do arquivo que será baixado
-    var fileUrl = '\Users\marco\OneDrive\Documentos\IFPA\WebDesign\ProjetoIfitness\Guia_Inform-tica_\Download\AtividadeHistoria';
-    // Nome do arquivo que será salvo localmente
-    var fileName = 'AtividadeHistoria';
-    // Criar um elemento de link temporário
-    var link = document.createElement('a');
-    // Configurar o atributo 'href' com a URL do arquivo
-    link.href = fileUrl;
-    // Configurar o atributo 'download' com o nome do arquivo
-    link.download = fileName;
-    // Adicionar o link ao corpo do documento
-    document.body.appendChild(link);
-    // Simular um clique no link para iniciar o download
-    link.click();
-    // Remover o link do corpo do documento
-    document.body.removeChild(link);
-});
 
-  </script>
+  <script src="script/script.js"></script>
 </div>
 </body>
 </html>

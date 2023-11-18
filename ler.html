@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guia de Informática</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <style>
+    body {
+      display: grid;
+      margin: auto;
+      grid-template-columns: repeat(8, 192px);
+      grid-template-rows: repeat(7, 102px);
+    }
+
+    header.header {
+      grid-column: 2 / 8;
+      grid-row: 1;
+    }
+
+    div.header_functions {
+      grid-column: 2 / 8;
+      display: flex;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      border-bottom: 5px solid rgba(3, 3, 40, 0.786);
+    }
+
+    div.logo {
+      width: 70px;
+      height: 60px;
+      margin: 0px 0px 0px 2px;
+    }
+
+    div.logo img {
+      border-radius: 50%;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    div.menu {
+      height: 60px;
+      width: 100%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+    }
+
+    div.menu ul {
+      display: flex;
+      margin: 0;
+      padding: 0;
+    }
+
+    div.menu ul li {
+      list-style-type: none;
+      margin-left: 150px;
+    }
+
+    div.menu ul li a {
+      text-decoration: none;
+      color: rgb(4, 4, 44);
+      font-size: 1.2rem;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    main {
+      grid-column: 2 / 8;
+      padding: 20px 0;
+      margin-top: 20px;
+    }
+
+    section.container {
+      display: flex;
+    }
+
+    article.conteudoContainer {
+      width: 50%;
+      height: 450px;
+      padding-right: 200px;
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 150px 200px 65px;
+    }
+
+    article.conteudoContainer h1 {
+      color: rgb(5, 5, 41);
+      font-size: 3rem;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: lighter;
+    }
+
+    article.conteudoContainer p {
+      color: rgb(5, 5, 41);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.2rem;
+    }
+
+    article.conteudoContainer button {
+      background-color: rgb(5, 5, 41);
+      color: white;
+      border: none;
+      border-radius: 40px;
+      width: 50%;
+      height: 45px;
+      cursor: pointer;
+    }
+
+    article.imgContainer {
+      width: 50%;
+    }
+
+    article.imgContainer img {
+      border-radius: 50%;
+      height: 400px;
+      width: 400px;
+      float: right;
+      object-fit: cover;
+    }
+
+    footer {
+      grid-column: 2 / 8;
+      grid-row: 7;
+      margin-top: 50px;
+      border-top: 5px solid rgb(4, 4, 39);
+      width: 100%;
+      text-align: center;
+      padding-top: 15px;
+    }
+
+    div.conteudoFooter {
+      color: rgb(4, 4, 39);
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0 auto;
+    }
+
+    #teste {
+      text-decoration: none;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+    }
+
+    section.accordionPrefacio {
+      grid-column: 2 / 8;
+      grid-row: 6;
+    }
+
+    div.accordion {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    div.accordion-item {
+      margin-bottom: 2px;
+    }
+
+    div.accordion-item-header {
+      display: flex;
+      align-items: center;
+      content: flex-end;
+      height: 40px;
+      padding: 0;
+      cursor: pointer;
+    }
+
+    div.accordion-item-header h1 {
+      color: rgb(4, 4, 44);
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    div.accordion-item-header i {
+      color: white;
+      font-size: 1rem;
+      background-color: rgb(4, 4, 44);
+      border: 2px solid rgb(4, 4, 44);
+      padding: 10px;
+      border-radius: 50%;
+      cursor: pointer;
+      width: 13px;
+      height: 13px;
+      align-items: center;
+      text-align: center;
+    }
+
+    div.accordion-item-header:hover {
+      background-color: #f3f3f3;
+      border-radius: 40px;
+    }
+
+    div.accordion-item-body {
+      display: none;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header_functions">
+      <div class="logo">
+        <a href="index.html">
+          <img src="img/logoPi.png" alt="imagemteste">
+        </a>
+      </div>
+      <div class="menu">
+        <ul>
+          <li>
+            <a href="/">Guia da Paz</a>
+          </li>
+          <li>
+            <a href="/sobre.html">Sobre o Projeto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="apresentacao">
+      <div class="apresentacaoConteudo">
+        <h1>Apresentação</h1>
+        <article class="apresentacaoContainer">
+          <span>
+            BEM - VINDO(A) ao IFPA - Campus Breves!
+          </span>
+          <p>
+            É uma alegria ter você por aqui, este guia é uma ferramenta que vai te ajudar
+            a se acostumar na sua nova casa, o IFPA Campus Breves.
+
+          </p>
+          <p>
+            Aqui Neste guia, vamos te apresentar o nosso campus, alguns setores e
+            pessoas com as quais você vai conviver e que poderão ajudar quando você
+            precisar. Também (A palavra “também” foi repetida 19 vezes ao longo do texto,
+            portanto, sugiro que você troque por sinônimos.) iremos te dar algumas dicas legais
+            para que você tenha sucesso nas suas atividades acadêmicas e estudos.
+
+          </p>
+          <p>
+            Sabemos que é tudo muito novo e são muitas informações para assimilar
+            nesse momento de chegada ao IFPA.
+
+          </p>
+          <p>
+            Então vamos lá? <br>
+            Aqui vamos fazer algumas breves apresentações, mas sempre com algum
+            link (Não encontrei nenhum link no texto.) para você clicar e encontrar mais
+            informações. <br>
+            VEM COM A GENTE!
+
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="accordionPrefacio">
+      <div class="accordion">
+        <div class="accordion-item">
+          <div class="accordion-item-header" onclick="toggleAccordion(this)">
+            <h1>
+              Prefácio
+            </h1>
+            <i class="fa-solid fa-arrow-down"></i>
+          </div>
+          <div class="accordion-item-body">
+            <p>
+              Este guia foi cuidadosamente elaborado com o intuito de ser o companheiro
+              confiável de cada aluno do curso de técnico integrado ao ensino médio em sua
+              jornada educacional. Aqui você encontrará não apenas um conjunto de regras, mas
+              sim um mapa para desenvolver habilidades, cultivar hábitos produtivos e trilhar o
+              caminho que leva ao sucesso acadêmico e pessoal.
+            </p>
+            <p>
+              Nossa intenção é clara: fornecer orientação prática e conselhos valiosos que
+              o ajude a enfrentar os desafios da vida estudantil com confiança, desde questões da
+              vida acadêmica até às disciplinas e carga horária do curso. Este guia abrangente
+              aborda diversos aspectos da experiência escolar.
+            </p>
+            <p>
+              À medida que você se aprofunda nas páginas que se seguem, lembre-se de
+              que o conhecimento é uma jornada e que cada passo que você dá para adquirir
+              sabedoria é uma realização em si mesmo. Este guia está aqui para apoiá-lo,
+              inspirá-lo e lembrá-lo de que o sucesso não é apenas alcançar metas, mas também
+              abraçar o crescimento pessoal ao longo do caminho.
+            </p>
+            <p>
+              Que este "Guia do Estudante do IFPA Campus Breves" abra a sua mente,
+              sendo o aliado que o motiva e o recurso que o capacita. Estamos ansiosos para
+              testemunhar suas conquistas e ver como você transforma essas regras em
+              ferramentas para moldar um futuro brilhante.
+            </p>
+
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-item-header" onclick="toggleAccordion(this)">
+            <h1>
+              Item 1
+            </h1>
+            <i class="fa-solid fa-arrow-down"></i>
+          </div>
+          <div class="accordion-item-body">
+            <p>Conteúdo do Item 1.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-item-header" onclick="toggleAccordion(this)">
+            <h1>
+              Item 1
+            </h1>
+            <i class="fa-solid fa-arrow-down"></i>
+          </div>
+          <div class="accordion-item-body">
+            <p>Conteúdo do Item 1.</p>
+          </div>
+        </div>
+    </section>
+
+  </main>
+  <!-- <footer>
+    <div class="conteudoFooter">
+      Curso Técnico em Informática 2023
+    </div>
+  </footer> -->
+  <script src="https://kit.fontawesome.com/65f22fe718.js" crossorigin="anonymous"></script>
+  <script>
+    function toggleAccordion(element) {
+      // Obtém o elemento pai (item do acordeão)
+      var item = element.parentNode;
+
+      // Obtém o corpo do item do acordeão
+      var body = item.querySelector('.accordion-item-body');
+
+      // Alterna a visibilidade do corpo do item do acordeão
+      if (body.style.display === 'none') {
+        body.style.display = 'block';
+      } else {
+        body.style.display = 'none';
+      }
+    }
+  </script>
+  </div>
+</body>
+
+</html>
