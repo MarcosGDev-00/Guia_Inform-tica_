@@ -1,19 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Guia de Informática</title>
   <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
   <header class="header">
     <div class="header_functions">
-      <div class="logo">
-        <a href="index.html">
-          <img src="img/logoPi.png" alt="imagemteste">
-        </a>
-      </div>
+      <nav>
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/logoPi.png" alt="imagemteste">
+          </a>
+        </div>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <div class="caminho">
     <a href="index.html">Home</a> &gt;
@@ -21,17 +35,22 @@
   </div>
   <main>
     <section class="container">
-        <article class="conteudoContainer">
-          <h1>
-            Projeto Integrador 2023
-          </h1>
-          <p>
-            Este projeto foi criado pela turma de Informática de 2022 com o axílio de professores.
-          </p>
-        </article>
-        <article class="imagemContainer">
-          <img src="img/logoPi.png" alt="LogoProjeto">
-        </article>
+      <article class="conteudoContainer">
+        <h1>
+          Projeto Integrador 2023
+        </h1>
+        <p>
+          Este projeto foi criado pela turma de Informática de 2022 com o axílio de professores.
+        </p>
+      </article>
+      <article class="imgContainer">
+        <img src="img/logoPi.png" alt="LogoProjeto">
+      </article>
+      <article class="conteudoContainerSome">
+        <p>
+          Um guia para estudantes do Técnico integrado ao ensino médio do IFPA - Campus Breves. Este guia serve para todos os eixos, e irá te ajudar em seu tempo de estudo no Instituto.
+        </p>
+      </article>
     </section>
   </main>
   <footer>
@@ -39,7 +58,83 @@
       Curso Técnico em Informática 2023
     </div>
   </footer>
-  <script src="script/script.js"></script>
-</div>
+
+  <script>
+    class MobileNavbar {
+      constructor(mobileMenu, navList, navLinks) {
+        this.mobileMenu = document.querySelector(mobileMenu);
+        this.navList = document.querySelector(navList);
+        this.navLinks = document.querySelectorAll(navLinks);
+        this.activeClass = "active";
+
+        this.handleClick = this.handleClick.bind(this);
+        this.closeNavigation = this.closeNavigation.bind(this); // Adicione esta linha
+      }
+
+      animateLinks() {
+        this.navLinks.forEach((link, index) => {
+          link.style.animation
+            ? (link.style.animation = "")
+            : (link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3
+              }s`);
+        });
+
+        const zIndexValue = this.mobileMenu.classList.contains(this.activeClass) ? 1 : 2;
+        this.navLinks.forEach((link) => {
+          link.style.zIndex = zIndexValue;
+        });
+      }
+
+      handleClick() {
+        this.navList.classList.toggle(this.activeClass);
+        this.mobileMenu.classList.toggle(this.activeClass);
+        this.animateLinks();
+      }
+
+      closeNavigation() {
+        this.navList.classList.remove(this.activeClass);
+        this.mobileMenu.classList.remove(this.activeClass);
+        this.animateLinks(); // Chame a animação ao fechar a navegação
+      }
+
+      addClickEvent() {
+        this.mobileMenu.addEventListener("click", this.handleClick);
+
+        // Adicione um evento de clique diretamente nos links
+        this.navLinks.forEach((link) => {
+          link.addEventListener("click", () => {
+            this.closeNavigation();
+          });
+        });
+
+        // Adicione um ouvinte de clique ao document.body para fechar o menu ao clicar fora
+        document.body.addEventListener("click", (event) => {
+          const isNavListClicked = this.navList.contains(event.target) || Array.from(this.navLinks).some(link => link.contains(event.target));
+          const isMobileMenuClicked = this.mobileMenu.contains(event.target);
+
+          if (!isNavListClicked && !isMobileMenuClicked) {
+            this.closeNavigation();
+          }
+        });
+      }
+
+      init() {
+        if (this.mobileMenu) {
+          this.addClickEvent();
+        }
+        return this;
+      }
+    }
+
+    const mobileNavbar = new MobileNavbar(
+      ".mobile-menu",
+      ".nav-list",
+      ".nav-list li"
+    );
+    mobileNavbar.init();
+
+  </script>
+  </div>
 </body>
+
 </html>
