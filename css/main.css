@@ -15,6 +15,14 @@ body {
   grid-template-rows: repeat(7, 102px);
 }
 
+body.body {
+  display: grid;
+  margin: auto;
+  overflow-x: hidden;
+  grid-template-columns: repeat(8, 192px);
+  grid-template-rows: repeat(60, 102px);
+}
+
 header.header {
   grid-column: 2 / 8;
   grid-row: 1;
@@ -288,8 +296,9 @@ div.accordion-item-header i {
   height: 13px;
   align-items: center;
   text-align: center;
-  margin-right: 10px;
-}
+  margin-right: 20px;
+  transition: transform 0.3s ease-in-out;
+  }
 
 div.accordion-item-header:hover {
   background-color: #f3f3f3;
@@ -297,19 +306,186 @@ div.accordion-item-header:hover {
 }
 
 div.accordion-item-body {
-  display: none;
   padding: 10px;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: height 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
-div.accordion-item-body p {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-  line-height: 20px;
-  letter-spacing: 1.2px;
-  color: #4d4c4c;
-  text-align: justify;
-  padding-left: 37px;
+/* Define a altura quando o item do acordeão está aberto */
+div.accordion-item.open div.accordion-item-body {
+  height: auto;
+  opacity: 1;
+}
+
+div.accordion-item.open div.accordion-item-header i {
+  transform: rotate(180deg);
+}
+
+section.body {
+  grid-column: 2 / 8;
+  grid-row: 39;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(4, 4, 44, 0.301);
+  border-radius: 10px;
+}
+
+div.slider {
+  width: 800px;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+div.slides {
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
+
+div.slides input {
+  display: none;
+}
+
+div.slide {
+  width: 20%;
+  transition: 2s;
+}
+
+div.slide img {
+  width: 800px;
+  height: 500px;
+  object-fit: cover;
+}
+
+div.navigation-manual {
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+label.manual-btn {
+  border: 2px solid rgb(4, 4, 44);
+  box-shadow: 0px 2px 4px rgb(4, 4, 39);
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+label.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+label.manual-btn:hover {
+  background: rgb(4, 4, 44);
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0px;
+}
+
+#radio2:checked ~ .first {
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first {
+  margin-left: -60%;
+}
+
+#radio5:checked ~ .first {
+  margin-left: -80%;
+}
+
+#radio6:checked ~ .first {
+  margin-left: -100%;
+}
+
+#radio7:checked ~ .first {
+  margin-left: -120%;
+}
+
+#radio8:checked ~ .first {
+  margin-left: -140%;
+}
+
+#radio9:checked ~ .first {
+  margin-left: -160%;
+}
+
+#radio0:checked ~ .first {
+  margin-left: -180%;
+}
+
+div.navigation-auto {
+  position: absolute;
+  display: flex;
+  width: 800px;
+  justify-content: center;
+  margin-top: 460px;
+}
+
+div.navigation-auto div {
+  border: 2px solid rgb(4, 4, 44);
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+div.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
+input#radio1:checked ~ div.navigation-auto div.auto-btn1 {
+  background-color: rgb(4, 4, 44);
+}
+
+input#radio2:checked ~ div.navigation-auto div.auto-btn2 {
+  background-color: rgb(4, 4, 44);
+}
+
+input#radio3:checked ~ div.navigation-auto div.auto-btn3 {
+  background-color: rgb(4, 4, 44);
+}
+
+input#radio4:checked ~ div.navigation-auto div.auto-btn4 {
+  background-color: rgb(4, 4, 44);
+}
+
+input#radio5:checked ~ div.navigation-auto div.auto-btn5 {
+  background-color: rgb(4, 4, 44);
+}
+
+input#radio6:checked ~ div.navigation-auto div.auto-btn6 {
+  background-color: rgb(4, 4, 44);
+}
+
+input#radio7:checked ~ div.navigation-auto div.auto-btn7 {
+  background-color: rgb(4, 4, 44);
+}
+
+input#radio8:checked ~ div.navigation-auto div.auto-btn8 {
+  background-color: rgb(4, 4, 44);
+}
+
+input#radio9:checked ~ div.navigation-auto div.auto-btn9 {
+  background-color: rgb(4, 4, 44);
+}
+
+input#radio0:checked ~ div.navigation-auto div.auto-btn0 {
+  background-color: rgb(4, 4, 44);
 }
 
 @media screen and (max-width: 600px) {
@@ -317,6 +493,14 @@ div.accordion-item-body p {
     overflow-x: hidden;
     grid-template-rows: repeat(9, 150px);
     grid-template-columns: repeat(3, auto);
+  }
+
+  body.body {
+    display: grid;
+    margin: auto;
+    overflow-x: hidden;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(60, 102px);
   }
 
   main {
@@ -546,6 +730,88 @@ div.accordion-item-body p {
     margin-right: 10px;
   }
 
+  section.body {
+    grid-column: 1 / 4;
+    grid-row: 39;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(4, 4, 44, 0.301);
+    border-radius: 10px;
+  }
+
+  div.slider {
+    width: 300px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  div.slides {
+    width: 500%;
+    height: 500px;
+    display: flex;
+  }
+  
+  div.slide {
+    width: 20%;
+    transition: 2s;
+  }
+  
+  div.slide img {
+    width: 300px;
+    height: 500px;
+    object-fit: cover;
+  }
+  
+  div.navigation-manual {
+    position: absolute;
+    width: 300px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  label.manual-btn {
+    border: 2px solid rgb(4, 4, 44);
+    box-shadow: 0px 2px 4px rgb(4, 4, 39);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+  label.manual-btn:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  label.manual-btn:hover {
+    background: rgb(4, 4, 44);
+  }
+  
+  div.navigation-auto {
+    position: absolute;
+    display: flex;
+    width: 300px;
+    justify-content: center;
+    margin-top: 460px;
+  }
+  
+  div.navigation-auto div {
+    border: 2px solid rgb(4, 4, 44);
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+  }
+  
+  div.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+  }
+
+
   /* Responsividade Sobre */
   div.caminho {
     display: none;
@@ -558,6 +824,14 @@ div.accordion-item-body p {
     overflow-x: hidden;
     grid-template-rows: repeat(9, 150px);
     grid-template-columns: repeat(6, 200px);
+  }
+
+  body.body {
+    display: grid;
+    margin: auto;
+    overflow-x: hidden;
+    grid-template-columns: repeat(6, 200px);
+    grid-template-rows: repeat(60, 102px);
   }
 
   main {
@@ -767,6 +1041,119 @@ div.accordion-item-body p {
     align-items: center;
     text-align: center;
     margin-right: 10px;
+  }
+
+  section.body {
+    grid-column: 2 / 6;
+    grid-row: 39;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(4, 4, 44, 0.301);
+    border-radius: 10px;
+  }
+
+  div.slider {
+    width: 300px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  div.slides {
+    width: 500%;
+    height: 500px;
+    display: flex;
+  }
+  
+  div.slide {
+    width: 20%;
+    transition: 2s;
+  }
+  
+  div.slide img {
+    width: 300px;
+    height: 500px;
+    object-fit: cover;
+  }
+  
+  div.navigation-manual {
+    position: absolute;
+    width: 300px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  label.manual-btn {
+    border: 2px solid rgb(4, 4, 44);
+    box-shadow: 0px 2px 4px rgb(4, 4, 39);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+  label.manual-btn:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  label.manual-btn:hover {
+    background: rgb(4, 4, 44);
+  }
+  
+  #radio1:checked ~ .first {
+    margin-left: 0px;
+  }
+  
+  #radio2:checked ~ .first {
+    margin-left: -20%;
+  }
+  
+  #radio3:checked ~ .first {
+    margin-left: -40%;
+  }
+  
+  #radio4:checked ~ .first {
+    margin-left: -60%;
+  }
+  
+  div.navigation-auto {
+    position: absolute;
+    display: flex;
+    width: 300px;
+    justify-content: center;
+    margin-top: 460px;
+  }
+  
+  div.navigation-auto div {
+    border: 2px solid rgb(4, 4, 44);
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+  }
+  
+  div.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  input#radio1:checked ~ div.navigation-auto div.auto-btn1 {
+    background-color: rgb(4, 4, 44);
+  }
+  
+  input#radio2:checked ~ div.navigation-auto div.auto-btn2 {
+    background-color: rgb(4, 4, 44);
+  }
+  
+  input#radio3:checked ~ div.navigation-auto div.auto-btn3 {
+    background-color: rgb(4, 4, 44);
+  }
+  
+  input#radio4:checked ~ div.navigation-auto div.auto-btn4 {
+    background-color: rgb(4, 4, 44);
   }
 
   /* Responsividade Sobre */

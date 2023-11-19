@@ -1,19 +1,24 @@
 function toggleAccordion(element) {
-  // Obtém o elemento pai (item do acordeão)
   var item = element.parentNode;
-
-  // Obtém o corpo do item do acordeão
   var body = item.querySelector('.accordion-item-body');
 
-  // Alterna a visibilidade do corpo do item do acordeão
-  if (body.style.display === 'none') {
-    body.style.display = 'block';
+  var isOpen = item.classList.toggle('open');
+
+  if (isOpen) {
+    body.style.height = body.scrollHeight + "px";
   } else {
-    body.style.display = 'none';
+    body.style.height = "0";
   }
 }
 
-
+var counter = 1;
+    setInterval(function () {
+      document.getElementById('radio' + counter).checked = true;
+      counter++;
+      if(counter > 9) {
+        counter = 1;
+      }
+    }, 5000);
 
 class MobileNavbar {
   constructor(mobileMenu, navList, navLinks) {
