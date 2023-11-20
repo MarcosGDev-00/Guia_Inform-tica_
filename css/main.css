@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* Tela Homa */
@@ -776,14 +777,24 @@ div.descricaoServidorSome p {
 
 @media screen and (max-width: 600px) {
 
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
+/* ::-webkit-scrollbar {
+  display: none;
+} */
   
   html {
     overflow-x: hidden;
+    max-width: 100vw;
   }
   
   body {
     overflow-x: hidden;
+    max-width: 100vw;
     grid-template-rows: repeat(9, 150px);
     grid-template-columns: repeat(3, auto);
   }
@@ -820,7 +831,7 @@ div.descricaoServidorSome p {
   }
 
   .nav-list {
-    position: absolute;
+    position: fixed;
     top: 0vh;
     right: 0;
     width: 50%;
