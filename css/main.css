@@ -775,6 +775,10 @@ div.descricaoServidorSome p {
 }
 
 @media screen and (max-width: 600px) {
+  html {
+    overflow-x: hidden;
+  }
+  
   body {
     overflow-x: hidden;
     grid-template-rows: repeat(9, 150px);
