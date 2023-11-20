@@ -775,6 +775,9 @@ div.descricaoServidorSome p {
 }
 
 @media screen and (max-width: 600px) {
+
+
+  
   html {
     overflow-x: hidden;
   }
