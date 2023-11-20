@@ -793,6 +793,7 @@ div.descricaoServidorSome p {
   }
   
   body {
+    background-color: red;
     overflow-x: hidden;
     max-width: 100vw;
     grid-template-rows: repeat(9, 150px);
