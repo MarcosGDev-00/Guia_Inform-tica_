@@ -833,7 +833,7 @@ div.descricaoServidorSome p {
   }
 }
 
-@media screen and (min-width: 50px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
   * {
     margin: 0;
@@ -1340,6 +1340,7 @@ div.descricaoServidorSome p {
     overflow-x: hidden;
     grid-template-columns: repeat(7, 146px);
     grid-template-rows: repeat(71, 102px);
+    background-color: red;
   }
 
   main {
