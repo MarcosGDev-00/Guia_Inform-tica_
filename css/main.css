@@ -798,7 +798,7 @@ div.descricaoServidorSome p {
     cursor: pointer;
     transition: 1s;
     left: 0;
-    display: none;
+    
   }
 
   label.manual-btn:not(:last-child) {
@@ -825,7 +825,7 @@ div.descricaoServidorSome p {
     padding: 5px;
     border-radius: 10px;
     transition: 1s;
-    display: none;
+    
   }
 
   div.navigation-auto div:not(:last-child) {
