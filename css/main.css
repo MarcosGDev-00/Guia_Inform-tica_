@@ -9,6 +9,7 @@
 /* Tela Homa */
 
 body {
+  max-width: 100vw;
   display: grid;
   margin: auto;
   overflow-x: hidden;
@@ -18,7 +19,9 @@ body {
 
 body.body {
   display: grid;
-  margin: auto;
+  max-width: 100vw;
+  margin: 0 auto;
+  justify-content: center;
   overflow-x: hidden;
   grid-template-columns: repeat(8, 192px);
   grid-template-rows: repeat(74, 102px);
@@ -27,6 +30,7 @@ body.body {
 header.header {
   grid-column: 2 / 8;
   grid-row: 1;
+  max-width: 100vw;
 }
 
 div.header_functions {
@@ -106,10 +110,12 @@ main {
   grid-row: 2;
   padding: 20px 0;
   margin-top: 20px;
+  max-width: 100vw;
 }
 
 section.container {
   display: flex;
+  max-width: 100vw;
 }
 
 article.conteudoContainer {
@@ -173,6 +179,7 @@ footer {
   width: 100%;
   text-align: center;
   padding-top: 15px;
+  max-width: 100vw;
 }
 
 div.conteudoFooter {
@@ -189,6 +196,7 @@ footer.leituraFooter {
   width: 100%;
   text-align: center;
   padding-top: 15px;
+  max-width: 100vw;
 }
 
 div.conteudoFooterLer {
@@ -232,6 +240,7 @@ div.caminho a {
 section.container {
   grid-row: 3;
   margin-top: 20px;
+  max-width: 100vw;
 }
 
 /* Ler Online */
@@ -309,8 +318,8 @@ div.accordion-item-header i {
   padding: 10px;
   border-radius: 50%;
   cursor: pointer;
-  width: 13px;
-  height: 13px;
+  width: 40px;
+  height: 40px;
   align-items: center;
   text-align: center;
   margin-right: 20px;
@@ -359,6 +368,7 @@ section.body {
   justify-content: center;
   align-items: center;
   border-radius: 10px;
+  max-width: 100vw;
 }
 
 div.slider {
@@ -651,7 +661,7 @@ div.imagemServidor img {
 }
 
 div.descricaoServidor {
-  background-color: rgba(4, 4, 44, 0.419);
+  
   max-width: 50%;
   margin: 50px auto;
   border-radius: 10px;
@@ -701,7 +711,7 @@ div.imagemServidor2 img {
 }
 
 div.descricaoServidor2 {
-  background-color: rgba(4, 4, 44, 0.419);
+  
   max-width: 60%;
   margin: 50px auto;
   border-radius: 10px;
@@ -751,7 +761,7 @@ div.imagemServidorSome img {
 }
 
 div.descricaoServidorSome {
-  background-color: rgba(4, 4, 44, 0.419);
+  
   max-width: 60%;
   margin: 50px auto;
   border-radius: 10px;
@@ -774,65 +784,6 @@ div.descricaoServidorSome p {
   text-align: center;
 }
 
-@media screen and (min-width: 300px) and (max-width: 500px) {
-
-  div.slider {
-    max-width: 300px;
-  }
-
-  div.navigation-manual {
-    position: absolute;
-    left: 0;
-    margin-left: 0;
-    margin-top: -550px;
-    display: flex;
-    justify-content: center;
-    display: none;
-  }
-
-  label.manual-btn {
-    border: 2px solid rgb(4, 4, 44);
-    box-shadow: 0px 2px 4px rgb(4, 4, 39);
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-    left: 0;
-    
-  }
-
-  label.manual-btn:not(:last-child) {
-    margin-right: 20px;
-  }
-
-  label.manual-btn:hover {
-    background: rgb(4, 4, 44);
-  }
-
-  div.navigation-auto {
-    position: absolute;
-    display: flex;
-    width: 300px;
-    justify-content: center;
-    margin-top: 350px;
-    display: none;
-    left: 0;
-    display: none;
-  }
-
-  div.navigation-auto div {
-    border: 2px solid rgb(4, 4, 44);
-    padding: 5px;
-    border-radius: 10px;
-    transition: 1s;
-    
-  }
-
-  div.navigation-auto div:not(:last-child) {
-    margin-right: 20px;
-  }
-}
-
 @media screen and (max-width: 768px) {
 
   * {
@@ -849,12 +800,15 @@ div.descricaoServidorSome p {
   body {
     overflow-x: hidden;
     max-width: 100vw;
+    max-height: 100%;
     grid-template-rows: repeat(9, 150px);
     grid-template-columns: repeat(3, auto);
   }
 
   body.body {
     display: grid;
+    max-width: 100vw;
+    height: 100%;
     margin: auto;
     overflow-x: hidden;
     grid-template-columns: repeat(3, auto);
@@ -865,6 +819,7 @@ div.descricaoServidorSome p {
     grid-column: 1 / 4;
     margin: 0 auto;
     max-width: 90%;
+    height: 100vh;
   }
 
   header.header {
@@ -1111,7 +1066,7 @@ div.descricaoServidorSome p {
   section.body {
     grid-column: 1 / 4;
     grid-row: 39;
-    margin: 0;
+    margin: 0 auto;
     padding: 80px 0 0 0;
     height: auto;
     display: flex;
@@ -1119,6 +1074,7 @@ div.descricaoServidorSome p {
     align-items: center;
     background-color: transparent;
     border-radius: 10px;
+    max-width: 100vw;
   }
 
   div.slider {
@@ -1129,7 +1085,7 @@ div.descricaoServidorSome p {
   }
 
   div.slides {
-    width: 500%;
+    width: 1000%;
     height: 900px;
     display: flex;
   }
@@ -1138,39 +1094,46 @@ div.descricaoServidorSome p {
     max-width: 20%;
     transition: 1.4s;
     position: relative;
+    height: auto;
   }
 
   div.slide img {
-    width: 800px;
-    height: 400px;
+    width: 100%;
+    height: 35%;
     border-radius: 10px;
     object-fit: cover;
-  }
+}
 
   div.text {
     padding: 0;
     margin: 20px auto;
     height: auto;
-    width: auto;
-    text-align: center;
+    width: 90vw;
+    justify-content: center;
+    text-align: left;
   }
 
   div.text p {
     color: rgb(4, 4, 44);
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.1rem;
+    font-size: 1.1em;
     text-align: justify;
     letter-spacing: 0.6px;
     line-height: 25px;
+    width: 90%;
+    margin: 0 auto;
   }
 
   div.navigation-manual {
     position: absolute;
-    width: 300px;
-    margin-top: -550px;
+    /* background-color: green; */
+    width: 90vw;
+    margin-top: -630px;
     display: flex;
     justify-content: center;
     margin-left: 145px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   label.manual-btn {
@@ -1190,13 +1153,54 @@ div.descricaoServidorSome p {
     background: rgb(4, 4, 44);
   }
 
+  #radio1:checked ~ .first {
+    margin-left: 0px;
+  }
+  
+  #radio2:checked ~ .first {
+    margin-left: -11.8%;
+  }
+  
+  #radio3:checked ~ .first {
+    margin-left: -26.8%;
+  }
+  
+  #radio4:checked ~ .first {
+    margin-left: -45.8%;
+  }
+  
+  #radio5:checked ~ .first {
+    margin-left: -72.3%;
+  }
+  
+  #radio6:checked ~ .first {
+    margin-left: -105%;
+  }
+  
+  #radio7:checked ~ .first {
+    margin-left: -125%;
+  }
+  
+  #radio8:checked ~ .first {
+    margin-left: -145%;
+  }
+  
+  #radio9:checked ~ .first {
+    margin-left: -165%;
+  }
+  
+  #radio0:checked ~ .first {
+    margin-left: -185%;
+  }
+
   div.navigation-auto {
     position: absolute;
     display: flex;
-    width: 300px;
+    width: 90vw;
     justify-content: center;
-    margin-top: 350px;
-    margin-left: 145px;
+    margin-top: 270px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   div.navigation-auto div {
@@ -1215,7 +1219,7 @@ div.descricaoServidorSome p {
   }
 
   article.artigoServidores {
-    max-width: 100%;
+    max-width: 100vw;
     margin: 100px 0;
   }
   
@@ -1239,7 +1243,7 @@ div.descricaoServidorSome p {
   }
   
   div.descricaoServidor {
-    background-color: rgba(4, 4, 44, 0.419);
+    
     max-width: 90%;
     margin: 50px auto;
     border-radius: 10px;
@@ -1295,7 +1299,7 @@ div.descricaoServidorSome p {
   }
   
   div.descricaoServidorSome {
-    background-color: rgba(4, 4, 44, 0.419);
+    
     max-width: 90%;
     margin: 50px auto;
     border-radius: 10px;
@@ -1327,31 +1331,32 @@ div.descricaoServidorSome p {
 /* Estilos específicos para dispositivos con un ancho de pantalla entre 601px y 1200px */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   body {
-    max-width: 100%;
+    max-width: 100vw;
     overflow-x: hidden;
     grid-template-rows: repeat(9, 150px);
-    grid-template-columns: repeat(5, 200px);
+    grid-template-columns: repeat(8, 128px);
   }
 
   body.body {
-    max-width: 100%;
+    width: 100vw;
     display: grid;
-    margin: auto;
+    margin: 0 auto;
+    justify-content: center;
     overflow-x: hidden;
-    grid-template-columns: repeat(7, 146px);
-    grid-template-rows: repeat(71, 102px);
-    background-color: red;
+    grid-template-columns: repeat(8, 128px);
+    grid-template-rows: repeat(76, 102px);
   }
 
   main {
-    grid-column: 2 / 7;
+    grid-column: 2 / 8;
     margin: 0 auto;
-    max-width: 100%;
+    max-width: 100vw;
+    height: 100vh;
   }
 
   header.header {
-    grid-column: 2 / 7;
-    max-width: 100%;
+    grid-column: 2 / 8;
+    max-width: 100vw;
   }
 
   div.header_functions {
@@ -1412,6 +1417,7 @@ div.descricaoServidorSome p {
 
   section.container {
     display: table;
+    width: 100%;
   }
 
   article.conteudoContainer {
@@ -1484,7 +1490,6 @@ div.descricaoServidorSome p {
     width: 70%;
     text-align: center;
     margin: 0 auto;
-    background-color: red;
     padding: 0px;
   }
 
@@ -1496,7 +1501,7 @@ div.descricaoServidorSome p {
   }
 
   footer {
-    grid-column: 2 / 7;
+    grid-column: 2 / 8;
     grid-row: 9;
     margin-top: 50px;
     border-top: 5px solid rgb(4, 4, 39);
@@ -1512,8 +1517,8 @@ div.descricaoServidorSome p {
   }
 
   footer.leituraFooter {
-    grid-column: 2 / 7;
-    grid-row: 71;
+    grid-column: 2 / 8;
+    grid-row: 76;
     margin-top: 50px;
     border-top: 5px solid rgb(4, 4, 39);
     width: 100%;
@@ -1528,6 +1533,10 @@ div.descricaoServidorSome p {
   }
 
   /* Responsividade Ler Online */
+
+  section.apresentacao {
+    max-width: 100vw;
+  }
 
   article.apresentacaoContainer p {
     font-size: 1rem;
@@ -1557,16 +1566,16 @@ div.descricaoServidorSome p {
 
   div.accordion-item-header i {
     color: white;
-    font-size: 1rem;
+    font-size: 1.2rem;
     background-color: rgb(4, 4, 44);
     border: 2px solid rgb(4, 4, 44);
     border-radius: 50%;
     cursor: pointer;
-    width: 10px;
-    height: 10px;
+    width: 40px;
+    height: 40px;
     align-items: center;
     text-align: center;
-    margin-right: 10px;
+    margin-right: 20px;
   }
 
   section.body {
@@ -1580,6 +1589,7 @@ div.descricaoServidorSome p {
     align-items: center;
     background-color: transparent;
     border-radius: 10px;
+    max-width: 100vw;
   }
 
   div.slider {
