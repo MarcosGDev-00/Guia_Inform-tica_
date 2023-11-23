@@ -751,7 +751,7 @@ div.descricaoServidorSome p {
     margin: auto;
     overflow-x: hidden;
     grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(94, 102px);
+    grid-template-rows: repeat(99, 102px);
   }
 
   main {
@@ -942,10 +942,10 @@ div.descricaoServidorSome p {
 
   footer.leituraFooter {
     grid-column: 1 / 4;
-    grid-row: 94;
+    grid-row: 99;
     margin-top: 50px;
     border-top: 5px solid rgb(4, 4, 39);
-    width: 100%;
+    max-width: 100vw;
     text-align: center;
     padding-top: 15px;
   }
@@ -1083,7 +1083,6 @@ div.descricaoServidorSome p {
 
   div.navigation-manual {
     position: absolute;
-    /* background-color: green; */
     width: 90vw;
     margin-top: -630px;
     display: flex;
@@ -1478,7 +1477,7 @@ div.descricaoServidorSome p {
     grid-row: 73;
     margin-top: 50px;
     border-top: 5px solid rgb(4, 4, 39);
-    width: 100%;
+    max-width: 100vw;
     text-align: center;
     padding-top: 15px;
   }
