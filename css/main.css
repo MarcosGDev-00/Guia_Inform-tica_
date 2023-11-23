@@ -1393,7 +1393,7 @@ div.descricaoServidorSome p {
     justify-content: center;
     overflow-x: hidden;
     grid-template-columns: repeat(8, 128px);
-    grid-template-rows: repeat(76, 102px);
+    grid-template-rows: repeat(70, 102px);
   }
 
   main {
@@ -1567,7 +1567,7 @@ div.descricaoServidorSome p {
 
   footer.leituraFooter {
     grid-column: 2 / 8;
-    grid-row: 76;
+    grid-row: 70;
     margin-top: 50px;
     border-top: 5px solid rgb(4, 4, 39);
     width: 100%;
