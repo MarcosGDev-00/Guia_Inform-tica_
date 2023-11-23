@@ -257,6 +257,18 @@ div.apresentacaoConteudo h1 {
   text-transform: uppercase;
 }
 
+div.apresentacaoConteudo2 {
+  text-align: center;
+}
+
+div.apresentacaoConteudo2 h1 {
+  color: rgb(4, 4, 44);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
 article.apresentacaoContainer {
   margin-bottom: 50px;
 }
@@ -1051,6 +1063,14 @@ div.descricaoServidorSome p {
   }
 
   div.apresentacaoConteudo h1 {
+    font-size: 2rem;
+  }
+
+  div.apresentacaoConteudo2 {
+    margin: 0px 20px;
+  }
+  
+  div.apresentacaoConteudo2 h1 {
     font-size: 2rem;
   }
 
