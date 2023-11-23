@@ -254,6 +254,7 @@ div.apresentacaoConteudo h1 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 3rem;
   margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
 article.apresentacaoContainer {
@@ -340,7 +341,6 @@ div.accordion-item-body {
   transition: height 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
-/* Define a altura quando o item do acordeão está aberto */
 div.accordion-item.open div.accordion-item-body {
   height: auto;
   opacity: 1;
@@ -349,13 +349,32 @@ div.accordion-item.open div.accordion-item-body {
 div.accordion-item-body p {
   color: rgb(4, 4, 44);
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+  color: #424242;
   letter-spacing: 1.2px;
   line-height: 20px;
+  margin-bottom: 20px;
 }
 
 div.accordion-item.open div.accordion-item-header i {
   transform: rotate(180deg);
+}
+
+li.acordion {
+  list-style-type: none;
+  color: rgb(4, 4, 44);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  color: #424242;
+  letter-spacing: 1.2px;
+  margin-bottom: 10px;
+}
+
+li.acordion:before {
+  content: '\2022';
+  color: rgb(4, 4, 44);
+  margin: 0;
+  font-size: 1.2em;
 }
 
 section.body {
@@ -1047,6 +1066,16 @@ div.descricaoServidorSome p {
     font-size: 1rem;
     margin-top: 10px;
     padding-left: 0px;
+  }
+
+  li.acordion {
+    list-style-type: none;
+    color: rgb(4, 4, 44);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    color: #424242;
+    letter-spacing: 1.2px;
+    margin-bottom: 10px;
   }
 
   div.accordion-item-header h1 {
