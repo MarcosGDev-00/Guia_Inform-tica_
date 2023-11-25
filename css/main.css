@@ -1282,6 +1282,10 @@ div.descricaoServidorSome p {
   div.caminho {
     display: none;
   }
+
+  /* #id {
+    text-shadow: ;
+  } */
 }
 
 /* Estilos específicos para dispositivos con un ancho de pantalla entre 601px y 1200px */
