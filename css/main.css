@@ -13,8 +13,9 @@ body {
   display: grid;
   margin: auto;
   overflow-x: hidden;
+  justify-content: center;
   grid-template-columns: repeat(8, 192px);
-  grid-template-rows: repeat(7, 102px);
+  /* grid-template-rows: repeat(7, 102px); */
 }
 
 body.body {
@@ -24,20 +25,23 @@ body.body {
   justify-content: center;
   overflow-x: hidden;
   grid-template-columns: repeat(8, 192px);
-  grid-template-rows: repeat(82, 102px);
+  /* grid-template-rows: repeat(82, 102px); */
+  background-color: aquamarine;
 }
 
 header.header {
   grid-column: 2 / 8;
-  grid-row: 1;
   max-width: 100vw;
+  max-height: 100vh;
+  background-color: orange;
 }
 
 div.header_functions {
   grid-column: 2 / 8;
   display: flex;
   max-width: 100%;
-  height: 100%;
+  max-height: 100%;
+  padding: 20px 0;
   align-items: center;
   border-bottom: 5px solid rgba(3, 3, 40, 0.786);
 }
@@ -107,11 +111,21 @@ nav {
 
 main {
   grid-column: 2 / 8;
-  grid-row: 2;
   padding: 20px 0;
   margin-top: 20px;
   max-width: 100vw;
-  max-height: 100vh;
+  /* max-height: 100%; */
+  background-color: red;
+}
+
+main.main {
+  grid-column: 2 / 8;
+  grid-row: 2 / 82;
+  padding: 20px 0;
+  margin-top: 20px;
+  max-width: 100vw;
+  max-height: 100%;
+  background-color: red;
 }
 
 section.container {
@@ -174,7 +188,6 @@ article.imgContainer img {
 
 footer {
   grid-column: 2 / 8;
-  grid-row: 7;
   margin-top: 50px;
   border-top: 5px solid rgb(4, 4, 39);
   width: 100%;
@@ -191,19 +204,20 @@ div.conteudoFooter {
 
 footer.leituraFooter {
   grid-column: 2 / 8;
-  grid-row: 82;
   margin-top: 50px;
   border-top: 5px solid rgb(4, 4, 39);
-  width: 100%;
   text-align: center;
   padding-top: 15px;
   max-width: 100vw;
+  max-height: 100vh;
+  background-color: blue;
 }
 
 div.conteudoFooterLer {
   color: rgb(4, 4, 39);
   font-family: Arial, Helvetica, sans-serif;
   margin: 0 auto;
+  padding: 10px 0 50px 0;
 }
 
 #teste {
@@ -296,26 +310,36 @@ article.apresentacaoContainer p {
 section.accordionPrefacio {
   grid-column: 2 / 8;
   grid-row: 6;
+  max-width: 100%;
+  max-height: 100%;
+  background-color: lime;
 }
 
 div.accordion {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
   padding: 0;
+  background-color: grey;
 }
 
 div.accordion-item {
   margin-bottom: 50px;
+  background-color: orange;
+  max-height: 100%;
+  max-width: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 div.accordion-item-header {
   display: flex;
-  align-items: center;
-  content: flex-end;
   height: 40px;
   cursor: pointer;
   font-size: 1.5rem;
+  width: 100%;
+  height: 100%;
 }
 
 div.accordion-item-header h1 {
@@ -323,6 +347,8 @@ div.accordion-item-header h1 {
   font-family: Arial, Helvetica, sans-serif;
   padding: 10px 0;
   cursor: pointer;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 div.accordion-item-header i {
@@ -330,18 +356,18 @@ div.accordion-item-header i {
   font-size: 1rem;
   background-color: rgb(4, 4, 44);
   border: 2px solid rgb(4, 4, 44);
-  padding: 10px;
+  padding: 12px;
   border-radius: 50%;
   cursor: pointer;
   width: 40px;
   height: 40px;
-  align-items: center;
-  text-align: center;
   margin-right: 20px;
+  margin-top: 10px;
+  margin-left: 20px;
   transition: transform 0.3s ease-in-out;
 }
 
-div.accordion-item-header:hover {
+div.accordion-item:hover {
   background-color: #f3f3f3;
   border-radius: 40px;
 }
@@ -356,7 +382,7 @@ div.accordion-item-body {
 }
 
 div.accordion-item.open div.accordion-item-body {
-  height: auto;
+  max-height: auto;
   opacity: 1;
 }
 
@@ -393,7 +419,7 @@ li.acordion:before {
 
 section.body {
   grid-column: 2 / 8;
-  grid-row: 39;
+  /* grid-row: 39; */
   margin: 0;
   padding: 100px 0 0 0;
   height: 900px;
