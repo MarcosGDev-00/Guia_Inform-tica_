@@ -933,7 +933,6 @@ div.descricaoServidorSome p {
     width: 70%;
     text-align: center;
     margin: 0 auto;
-    background-color: red;
     padding: 0px;
   }
 
@@ -1038,6 +1037,7 @@ div.descricaoServidorSome p {
     cursor: pointer;
     width: 35px;
     height: 35px;
+    padding: 10px;
   }
 
   section.body {
