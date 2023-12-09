@@ -130,11 +130,10 @@ section.container {
 }
 
 article.conteudoContainer {
-  width: 70%;
+  width: 60%;
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 150px 200px 65px;
-  line-height: 25px;
 }
 
 article.conteudoContainer h1 {
@@ -157,7 +156,7 @@ article.conteudoContainer button {
   color: white;
   border: none;
   border-radius: 40px;
-  width: 50%;
+  width: 40%;
   height: 45px;
   cursor: pointer;
 }
@@ -227,15 +226,6 @@ div.conteudoFooterLer {
 
 div.apresentacaoConteudoSobre {
   text-align: left;
-}
-
-div.apresentacaoConteudoSobre h1 {
-  color: rgb(4, 4, 44);
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 3rem;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  margin-top: 100px;
 }
 
 article.apresentacaoContainerSobre {
@@ -1346,6 +1336,15 @@ div.descricaoServidorSome p {
     display: none;
   }
 
+  article.apresentacaoContainerSobre {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  article.apresentacaoContainerSobre p {
+    font-size: 1.2rem;
+  }
+
   /* #id {
     text-shadow: ;
   } */
@@ -1758,6 +1757,15 @@ div.descricaoServidorSome p {
   /* Responsividade Sobre */
   div.caminho {
     display: none;
+  }
+
+  article.apresentacaoContainerSobre {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  article.apresentacaoContainerSobre p {
+    font-size: 1.2rem;
   }
 }
 
