@@ -207,6 +207,7 @@ article.conteudoContainer button {
   width: 40%;
   height: 45px;
   cursor: pointer;
+  padding: 0px 20px;
 }
 
 article.conteudoContainer button a {
@@ -321,8 +322,6 @@ div.divComo p {
 
 div.textButton {
   width: 50%;
-  display: grid;
-  grid-row: 2;
   margin-top: 50px;
 }
 
@@ -331,16 +330,19 @@ div.textButton button {
   color: white;
   border: none;
   border-radius: 40px;
-  width: 60%;
+  width: 40%;
+  padding: 0px 20px;
   height: 45px;
   cursor: pointer;
   margin-top: 10px;
+  display: block;
 }
 
 div.textButton button a {
   color: white;
   text-decoration: none;
 }
+
 
 footer {
   grid-column: 2 / 8;
@@ -415,7 +417,8 @@ article.conteudoContainerGuia button {
   color: white;
   border: none;
   border-radius: 40px;
-  width: 40%;
+  width: auto;
+  padding: 0px 20px;
   height: 45px;
   cursor: pointer;
 }
@@ -555,9 +558,10 @@ div.textButtonVoltar button {
   color: white;
   border: none;
   border-radius: 40px;
-  width: 20%;
   height: 45px;
   cursor: pointer;
+  width: auto;
+  padding: 0px 20px;
 }
 
 div.textButtonVoltar button a {
@@ -702,27 +706,16 @@ div.textButtonForm button {
   color: white;
   border: none;
   border-radius: 40px;
-  width: 20%;
   height: 45px;
   cursor: pointer;
-  margin-top: 10px;
-  margin-left: 20px;
+  width: auto;
+  padding: 0px 20px;
+  margin-right: 10px;
 }
 
 div.textButtonForm button a {
   color: white;
   text-decoration: none;
-}
-
-button[type="submit"] {
-  background-color: #4caf50;
-  color: #fff;
-}
-
-/* Estilizando o botão de limpar */
-button[type="button"] {
-  background-color: #ccc;
-  color: #333;
 }
 
 /* Sobre */
@@ -1449,7 +1442,7 @@ div.descricaoServidorSome p {
   main {
     grid-column: 1 / 4;
     margin: 0 auto;
-    max-width: 90%;
+    width: 90%;
     height: 100%;
   }
 
@@ -1677,28 +1670,6 @@ div.descricaoServidorSome p {
     text-align: justify;
   }
 
-  div.buttonSomeGuia {
-    margin: 50px auto;
-    text-align: center;
-  }
-
-  article.conteudoContainerSomeGuia button {
-    background-color: rgb(5, 5, 41);
-    color: white;
-    border: none;
-    border-radius: 40px;
-    width: 70%;
-    height: 69px;
-    cursor: pointer;
-    text-align: center;
-    margin: 40px auto;
-  }
-
-  article.conteudoContainerSomeGuia button a {
-    color: white;
-    text-decoration: none;
-  }
-
   article.imgContainerGuia {
     width: 70%;
     text-align: center;
@@ -1776,6 +1747,7 @@ div.descricaoServidorSome p {
   
   div.textButton button {
     margin-top: 20px;
+    width: 50%;
   }
 
   footer {
@@ -1846,7 +1818,8 @@ section.explicacao p {
 }
 
 div.textButtonVoltar button {
-  width: 30%;
+  width: auto;
+  padding: 0px 40px;
 }
 
 /* Responsividade Assistencia */
@@ -1880,7 +1853,9 @@ label.checkbox-container {
 }
 
 div.textButtonForm button {
-  width: 30%;
+  width: auto;
+  padding: 0px 20px;
+  margin-bottom: 15px;
 }
 
 /* Responsividade Perguntas */
@@ -2201,7 +2176,6 @@ div.accordion-item-bodyPerguntas p {
   }
   
   div.descricaoServidorSome {
-    
     max-width: 90%;
     margin: 50px auto;
     border-radius: 10px;
@@ -2251,13 +2225,8 @@ div.accordion-item-bodyPerguntas p {
   article.apresentacaoContainerSobre p {
     font-size: 1.2rem;
   }
-
-  /* #id {
-    text-shadow: ;
-  } */
 }
 
-/* Estilos específicos para dispositivos con un ancho de pantalla entre 601px y 1200px */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   body {
     max-width: 100vw;
@@ -2585,15 +2554,12 @@ div.accordion-item-bodyPerguntas p {
   }
   
   div.textButton {
-    width: 80%;
+    width: 100%;
   }
   
   div.textButton button {
-    margin-top: 20px;
-  }
-
-  div.textButton button a {
-    font-size: .8rem;
+    width: 30%;
+    padding: 0px 20px;
   }
 
   footer {
