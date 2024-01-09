@@ -11,6 +11,19 @@ function toggleAccordion(element) {
   }
 }
 
+function toggleAccordionPerguntas(element) {
+  var itemPerguntas = element.parentNode;
+  var bodyPerguntas = itemPerguntas.querySelector('.accordion-item-bodyPerguntas');
+
+  var isOpenPerguntas = itemPerguntas.classList.toggle('open');
+
+  if (isOpenPerguntas) {
+    bodyPerguntas.style.height = bodyPerguntas.scrollHeight + 'px';
+  } else {
+    bodyPerguntas.style.height = '0';
+  }
+}
+
 var counter = 1;
 setInterval(function () {
   document.getElementById('radio' + counter).checked = true;
@@ -97,3 +110,43 @@ const mobileNavbar = new MobileNavbar(
   '.nav-list li',
 );
 mobileNavbar.init();
+
+function initScrollSuave() {
+  const linksInternos = document.querySelectorAll('.js-menu a[href^="#"]');
+
+  function scrollToSection(event) {
+    event.preventDefault();
+    const href = event.currentTarget.getAttribute('href');
+    const section = document.querySelector(href);
+
+    section.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+
+    // Forma Alternativa
+    // const topo = section.offsetTop;
+
+    // window.scrollTo({
+    //   top: topo,
+    //   behavior: 'smooth',
+    // });
+  }
+
+  linksInternos.forEach((link) => {
+    link.addEventListener('click', scrollToSection);
+  });
+}
+
+initScrollSuave();
+
+function voltarAoTopo() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+
+function limparFormulario() {
+  document.getElementById("formulario").reset();
+}

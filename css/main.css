@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-/* Tela Homa */
+/* Tela Home */
 
 body {
   max-width: 100vw;
@@ -45,9 +45,10 @@ div.header_functions {
 }
 
 div.logo {
-  width: 70px;
+  width: 60%;
   height: 60px;
   margin: 0px 0px 0px 2px;
+  display: flex;
 }
 
 div.logo img {
@@ -55,6 +56,31 @@ div.logo img {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+div.logoLogo {
+  width: 70px;
+  height: 60px;
+}
+
+div.logoLogo img {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+div.textLogo {
+  display: flex;
+  text-align: left;
+  align-items: center;
+  width: 100%;
+}
+
+div.textLogo p {
+  color: rgb(5, 5, 41);
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 10px;
 }
 
 a {
@@ -107,6 +133,29 @@ nav {
   transition: 0.3s;
 }
 
+div.caminho {
+  width: 100%;
+  height: auto;
+}
+
+div.caminho ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+div.caminho li {
+  display: inline;
+  margin-right: 10px;
+}
+
+div.caminho a {
+  text-decoration: none;
+  color: rgb(5, 5, 41);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+
 main {
   grid-column: 2 / 8;
   padding: 20px 0;
@@ -147,7 +196,6 @@ article.conteudoContainer p {
   color: rgb(5, 5, 41);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.2rem;
-
   line-height: 30px;
 }
 
@@ -174,12 +222,124 @@ article.imgContainer {
   width: 50%;
 }
 
+article.cardsTextImg {
+  width: 50%;
+  text-align: right;
+}
+
+div.cardTelaInicial {
+  width: 85%;
+  height: auto;
+  padding: 10px;
+  float: right;
+  background: linear-gradient(180deg, rgba(0, 16.39, 255, 0) 0%, #040404 100%), #3C45C8;
+  border-radius: 12px;
+}
+
+div.imgCardInicio img {
+  margin: 10px 10px 0px 0px;
+}
+
+div.textCardInicio {
+  width: 60%;
+  height: 100%;
+}
+
+div.textCardInicio p {
+  text-align: left;
+  margin: 0px 0px 10px 10px;
+  color: white;
+  font-size: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div.cardTelaInicial2 {
+  width: 85%;
+  height: auto;
+  padding: 10px;
+  float: right;
+  background: linear-gradient(180deg, rgba(0, 16.39, 255, 0) 0%, #040404 100%), #7A3CCA;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+div.textMensagem {
+  background-color: #5E6179;
+  height: auto;
+  padding: 40px 0px 70px 0px;
+  margin: 50px auto 0px auto;
+  line-height: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+div.textMensagem p {
+  color: white;
+  font-family: cursive;
+  font-weight: lighter;
+  text-align: center;
+}
+
+div.imgMensagem {
+  text-align: center;
+  height: auto;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  margin-top: -60px;
+}
+
 article.imgContainer img {
   border-radius: 50%;
   height: 400px;
   width: 400px;
   float: right;
   object-fit: cover;
+}
+
+section.textComo {
+  width: 100%;
+  margin-top: 40px;
+}
+
+div.divComo {
+  width: 100%;
+}
+
+div.divComo h1 {
+  color: rgb(5, 5, 41);
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
+  font-weight: lighter;
+}
+
+div.divComo p {
+  color: rgb(5, 5, 41);
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 25px;
+}
+
+div.textButton {
+  width: 50%;
+  display: grid;
+  grid-row: 2;
+  margin-top: 50px;
+}
+
+div.textButton button {
+  background-color: rgb(5, 5, 41);
+  color: white;
+  border: none;
+  border-radius: 40px;
+  width: 60%;
+  height: 45px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+div.textButton button a {
+  color: white;
+  text-decoration: none;
 }
 
 footer {
@@ -220,6 +380,349 @@ div.conteudoFooterLer {
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
+}
+
+/* Sobre o Guia da Paz */
+
+section.containerGuia {
+  display: flex;
+  max-width: 100vw;
+}
+
+article.conteudoContainerGuia {
+  width: 60%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 150px 200px 65px;
+}
+
+article.conteudoContainerGuia h1 {
+  color: rgb(5, 5, 41);
+  font-size: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+
+article.conteudoContainerGuia p {
+  color: rgb(5, 5, 41);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  line-height: 30px;
+}
+
+article.conteudoContainerGuia button {
+  background-color: rgb(5, 5, 41);
+  color: white;
+  border: none;
+  border-radius: 40px;
+  width: 40%;
+  height: 45px;
+  cursor: pointer;
+}
+
+article.conteudoContainerGuia button a {
+  color: white;
+  text-decoration: none;
+}
+
+article.conteudoContainerSomeGuia {
+  display: none;
+}
+
+article.imgContainerGuia {
+  width: 50%;
+}
+
+article.imgContainerGuia img {
+  border-radius: 50%;
+  height: 400px;
+  width: 400px;
+  float: right;
+  object-fit: cover;
+}
+
+/* Conflitos */
+
+section.definicao {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+section.definicao h1 {
+  color: rgb(5, 5, 41);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.3rem;
+  font-weight: lighter;
+  margin-bottom: 20px;
+}
+
+section.definicao span {
+  color: rgb(5, 5, 41);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+
+section.definicao p {
+  color: rgb(5, 5, 41);
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 15px;
+  text-align: justify;
+}
+
+section.secao {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+section.secao p {
+  color: rgb(5, 5, 41);
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+section.secao p a {
+  color: rgb(5, 5, 41);
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+section.secao ul {
+  width: 100%;
+  text-decoration: none;
+  list-style-type: none;
+  margin-bottom: 30px;
+}
+
+section.secao ul li {
+  list-style-type: decimal;
+  margin-left: 30px;
+  color: rgb(5, 5, 41);
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 15px;
+}
+
+section.secao ul li a {
+  color: rgb(5, 5, 41);
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+section.secao ul li a:hover {
+  text-decoration: underline;
+}
+
+section.explicacao {
+  width: 100%;
+  height: auto;
+  margin-top: 60px;
+}
+
+section.explicacao ul {
+  width: 100%;
+  text-decoration: none;
+  list-style-type: none;
+  margin-bottom: 30px;
+}
+
+section.explicacao ul li {
+  list-style-type: decimal;
+  margin-left: 30px;
+  color: rgb(5, 5, 41);
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 10px;
+  font-weight: bolder;
+}
+
+section.explicacao p {
+  color: rgb(5, 5, 41);
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+div.textButtonVoltar {
+  width: 100%;
+  margin-top: 50px;
+  text-align: right;
+}
+
+div.textButtonVoltar button {
+  background-color: rgb(5, 5, 41);
+  color: white;
+  border: none;
+  border-radius: 40px;
+  width: 20%;
+  height: 45px;
+  cursor: pointer;
+}
+
+div.textButtonVoltar button a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Assistencia */
+
+section.formAss {
+  width: 100%;
+  height: auto;
+}
+
+form#formulario {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+form#formulario label {
+  color: rgb(5, 5, 41);
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+
+form#formulario input {
+  background-color: transparent;
+  border: 2px solid rgb(5, 5, 41);
+  text-decoration: none;
+  height: 33px;
+  border-radius: 7px;
+  padding: 0px 10px;
+  color: rgb(5, 5, 41);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+form#formulario select {
+  background-color: transparent;
+  border: 2px solid rgb(5, 5, 41);
+  text-decoration: none;
+  height: 33px;
+  border-radius: 7px;
+  padding: 0px 10px;
+  color: rgb(5, 5, 41);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+form#formulario option {
+  background-color: rgb(5, 5, 41);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+textarea#descreva {
+  height: 200px;
+  text-align: left;
+  background-color: transparent;
+  border: 2px solid rgb(5, 5, 41);
+  text-decoration: none;
+  border-radius: 7px;
+  padding: 10px;
+  padding-top: 15px;
+  color: rgb(5, 5, 41);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  width: 100%;
+  resize: none;
+  word-wrap: break-word;
+}
+
+form#formulario p {
+  color: rgb(5, 5, 41);
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 30px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+label.checkbox-container {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1.5;
+  color: rgb(5, 5, 41);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+label.checkbox-container::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgb(5, 5, 41);
+  background-color: transparent;
+  border-radius: 4px;
+}
+
+input[type="checkbox"]:checked + label.checkbox-container::before {
+  background-color: rgb(5, 5, 41);
+  border: 2px solid rgb(19, 19, 156);
+}
+
+label.checkbox-container::after {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 5px;
+  width: 6px;
+  height: 12px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  display: none;
+}
+
+input[type="checkbox"]:checked + label.checkbox-container::after {
+  display: block;
+}
+
+div.textButtonForm {
+  width: 100%;
+  margin-top: 50px;
+  text-align: right;
+}
+
+div.textButtonForm button {
+  background-color: rgb(5, 5, 41);
+  color: white;
+  border: none;
+  border-radius: 40px;
+  width: 20%;
+  height: 45px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+div.textButtonForm button a {
+  color: white;
+  text-decoration: none;
+}
+
+button[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+/* Estilizando o botão de limpar */
+button[type="button"] {
+  background-color: #ccc;
+  color: #333;
 }
 
 /* Sobre */
@@ -278,6 +781,146 @@ section.container {
   grid-row: 3;
   margin-top: 20px;
   max-width: 100vw;
+}
+
+
+
+/* Perguntas */
+
+div.apresentacaoConteudo {
+  text-align: left;
+}
+
+div.apresentacaoConteudo h1 {
+  color: rgb(4, 4, 44);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  margin-top: 100px;
+}
+
+div.apresentacaoConteudo2 {
+  text-align: center;
+}
+
+div.apresentacaoConteudo2 h1 {
+  color: rgb(4, 4, 44);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+article.apresentacaoContainer {
+  margin-bottom: 50px;
+}
+
+article.apresentacaoContainer span {
+  color: #4d4c4c;
+  font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+}
+
+article.apresentacaoContainer p {
+  color: #424242;
+  font-size: 1.3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  line-height: 25px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+section.accordionPrefacioPerguntas {
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: 50px;
+}
+
+div.accordionPerguntas {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  max-height: 100%;
+  padding: 0;
+}
+
+div.accordion-itemPerguntas {
+  margin-bottom: 20px;
+  max-height: 100%;
+  max-width: 100%;
+  align-items: center;
+  text-align: right;
+  justify-content: center;
+  border-bottom: 2px solid rgb(4, 4, 44);
+}
+
+div.accordion-item-headerPerguntas {
+  display: flex;
+  height: 40px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  width: 100%;
+  height: 100%;
+  text-align: right;
+}
+
+div.accordion-item-headerPerguntas h1 {
+  color: rgb(4, 4, 44);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 1.4rem;
+  padding: 10px 0;
+  cursor: pointer;
+  width: 100%;
+  max-height: 100%;
+  text-align: left;
+}
+
+div.accordion-item-headerPerguntas i {
+  color: rgb(4, 4, 44);
+  font-size: 1rem;
+  background-color: transparent;
+  padding: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-left: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+div.accordion-item-bodyPerguntas {
+  padding: 10px;
+  margin-top: 15px;
+  text-align: left;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+div.accordion-itemPerguntas.open div.accordion-item-bodyPerguntas {
+  max-height: auto;
+  opacity: 1;
+}
+
+div.accordion-item-bodyPerguntas p {
+  color: rgb(8, 8, 77);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 1.2px;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+div.accordion-itemPerguntas.open div.accordion-item-headerPerguntas i {
+  transform: rotate(180deg);
 }
 
 /* Ler Online */
@@ -799,6 +1442,10 @@ div.descricaoServidorSome p {
     grid-template-columns: repeat(3, auto);
   }
 
+  div.textLogo {
+    display: none;
+  }
+
   main {
     grid-column: 1 / 4;
     margin: 0 auto;
@@ -893,6 +1540,7 @@ div.descricaoServidorSome p {
 
   section.container {
     display: table;
+    width: 100%;
   }
 
   article.conteudoContainer {
@@ -976,6 +1624,160 @@ div.descricaoServidorSome p {
     object-fit: cover;
   }
 
+  /*  responsividade sobre o guia */
+
+  section.containerGuia {
+    display: table;
+    width: 100%;
+  }
+
+  article.conteudoContainerGuia {
+    max-width: 70%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    grid: none;
+  }
+
+  article.conteudoContainerGuia h1 {
+    color: rgb(5, 5, 41);
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  article.conteudoContainerGuia button {
+    display: none;
+  }
+
+  article.conteudoContainerGuia p {
+    color: rgb(5, 5, 41);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    display: none;
+  }
+
+  article.conteudoContainerSomeGuia {
+    width: 70%;
+    margin: 90px auto 0px auto;
+    height: 450px;
+    display: table;
+    padding: 0;
+    height: auto;
+    line-height: 30px;
+  }
+
+  article.conteudoContainerSomeGuia p {
+    color: rgb(5, 5, 41);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    text-align: justify;
+  }
+
+  div.buttonSomeGuia {
+    margin: 50px auto;
+    text-align: center;
+  }
+
+  article.conteudoContainerSomeGuia button {
+    background-color: rgb(5, 5, 41);
+    color: white;
+    border: none;
+    border-radius: 40px;
+    width: 70%;
+    height: 69px;
+    cursor: pointer;
+    text-align: center;
+    margin: 40px auto;
+  }
+
+  article.conteudoContainerSomeGuia button a {
+    color: white;
+    text-decoration: none;
+  }
+
+  article.imgContainerGuia {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0px;
+  }
+  
+  article.imgContainerGuia img {
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 30px;
+  }
+
+  article.cardsTextImg {
+    width: 100%;
+    text-align: right;
+    margin-top: 20px;
+  }
+  
+  div.cardTelaInicial {
+    width: 80%;
+    height: auto;
+    padding: 10px;
+    float: none;
+    margin: 0 auto;
+    background: linear-gradient(180deg, rgba(0, 16.39, 255, 0) 0%, #040404 100%), #3C45C8;
+    border-radius: 12px;
+  }
+  
+  div.imgCardInicio img {
+    margin: 10px 10px 0px 0px;
+  }
+  
+  div.textCardInicio {
+    width: 60%;
+    height: 100%;
+  }
+  
+  div.textCardInicio p {
+    text-align: left;
+    margin: 0px 0px 10px 10px;
+    color: white;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  div.cardTelaInicial2 {
+    width: 80%;
+    height: auto;
+    padding: 10px;
+    float: none;
+    margin: 0 auto;
+    background: linear-gradient(180deg, rgba(0, 16.39, 255, 0) 0%, #040404 100%), #7A3CCA;
+    border-radius: 12px;
+    margin-top: 20px;
+  }
+
+  div.textMensagem p {
+    font-size: 1.1rem;
+  }
+
+  div.divComo h1 {
+    font-size: 2rem;
+  }
+  
+  div.divComo p {
+    font-size: 1.2rem;
+  }
+  
+  div.textButton {
+    width: 80%;
+  }
+  
+  div.textButton button {
+    margin-top: 20px;
+  }
+
   footer {
     grid-column: 1 / 4;
     /* grid-row: 9; */
@@ -1007,6 +1809,97 @@ div.descricaoServidorSome p {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0 auto;
   }
+
+  /* Responsividade Conflitos */
+
+section.definicao h1 {
+  font-size: 2.5rem;
+}
+
+section.definicao span {
+  font-size: 1.3rem;
+}
+
+section.definicao p {
+  font-size: 1.1rem;
+}
+
+section.secao p {
+  font-size: 1.1rem;
+}
+
+section.secao ul li {
+  margin-bottom: 20px;
+}
+
+section.secao ul li a {
+  font-size: 1.1rem;
+}
+
+section.explicacao ul li {
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+section.explicacao p {
+  font-size: 1.1rem;
+}
+
+div.textButtonVoltar button {
+  width: 30%;
+}
+
+/* Responsividade Assistencia */
+
+form#formulario label {
+  font-size: 1.1rem;
+}
+
+form#formulario input {
+  font-size: 1.1rem;
+}
+
+form#formulario select {
+  font-size: 1.1rem;
+}
+
+form#formulario option {
+  font-size: 1.1rem;
+}
+
+textarea#descreva {
+  font-size: 1.1rem;
+}
+
+form#formulario p {
+  font-size: 1.1rem;
+}
+
+label.checkbox-container {
+  font-size: 1.1rem;
+}
+
+div.textButtonForm button {
+  width: 30%;
+}
+
+/* Responsividade Perguntas */
+
+div.apresentacaoConteudo h1 {
+  font-size: 2rem;
+}
+
+div.apresentacaoConteudo2 h1 {
+  font-size: 2rem;
+}
+
+div.accordion-item-headerPerguntas h1 {
+  font-size: 1.3rem;
+}
+
+div.accordion-item-bodyPerguntas p {
+  font-size: 1.1rem;
+}
 
   /* Responsividade Ler Online */
 
@@ -1345,6 +2238,20 @@ div.descricaoServidorSome p {
     font-size: 1.2rem;
   }
 
+  /* Responsividade Sobre Guia */
+  div.caminho {
+    display: none;
+  }
+
+  article.apresentacaoContainerSobre {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  article.apresentacaoContainerSobre p {
+    font-size: 1.2rem;
+  }
+
   /* #id {
     text-shadow: ;
   } */
@@ -1525,6 +2432,168 @@ div.descricaoServidorSome p {
     height: 100%;
     width: 100%;
     object-fit: cover;
+  }
+
+  /*  responsividade sobre o guia */
+
+  section.containerGuia {
+    display: table;
+    width: 100%;
+  }
+
+  article.conteudoContainerGuia {
+    max-width: 70%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    grid: none;
+  }
+
+  article.conteudoContainerGuia h1 {
+    color: rgb(5, 5, 41);
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  article.conteudoContainerGuia button {
+    display: none;
+  }
+
+  article.conteudoContainerGuia p {
+    color: rgb(5, 5, 41);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    display: none;
+  }
+
+  article.conteudoContainerSomeGuia {
+    width: 70%;
+    margin: 90px auto 0px auto;
+    height: 450px;
+    display: table;
+    padding: 0;
+    height: auto;
+    line-height: 30px;
+  }
+
+  article.conteudoContainerSomeGuia p {
+    color: rgb(5, 5, 41);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    text-align: justify;
+  }
+
+  div.buttonSomeGuia {
+    margin: 50px auto;
+    text-align: center;
+  }
+
+  article.conteudoContainerSomeGuia button {
+    background-color: rgb(5, 5, 41);
+    color: white;
+    border: none;
+    border-radius: 40px;
+    width: 70%;
+    height: 69px;
+    cursor: pointer;
+    text-align: center;
+    margin: 40px auto;
+  }
+
+  article.conteudoContainerSomeGuia button a {
+    color: white;
+    text-decoration: none;
+  }
+
+  article.imgContainerGuia {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0px;
+  }
+  
+  article.imgContainerGuia img {
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 30px;
+  }
+
+  article.cardsTextImg {
+    width: 100%;
+    text-align: right;
+    margin-top: 20px;
+  }
+  
+  div.cardTelaInicial {
+    width: 60%;
+    height: auto;
+    padding: 10px;
+    float: none;
+    margin: 0 auto;
+    background: linear-gradient(180deg, rgba(0, 16.39, 255, 0) 0%, #040404 100%), #3C45C8;
+    border-radius: 12px;
+  }
+  
+  div.imgCardInicio img {
+    margin: 10px 10px 0px 0px;
+  }
+  
+  div.textCardInicio {
+    width: 60%;
+    height: 100%;
+  }
+  
+  div.textCardInicio p {
+    text-align: left;
+    margin: 0px 0px 10px 10px;
+    color: white;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  div.cardTelaInicial2 {
+    width: 60%;
+    height: auto;
+    padding: 10px;
+    float: none;
+    margin: 0 auto;
+    background: linear-gradient(180deg, rgba(0, 16.39, 255, 0) 0%, #040404 100%), #7A3CCA;
+    border-radius: 12px;
+    margin-top: 20px;
+  }
+
+  div.textMensagem {
+    padding: 20px;
+  }
+
+  div.textMensagem p {
+    font-size: 1.1rem;
+  }
+
+  div.divComo h1 {
+    font-size: 2rem;
+  }
+  
+  div.divComo p {
+    font-size: 1.2rem;
+  }
+  
+  div.textButton {
+    width: 80%;
+  }
+  
+  div.textButton button {
+    margin-top: 20px;
+  }
+
+  div.textButton button a {
+    font-size: .8rem;
   }
 
   footer {

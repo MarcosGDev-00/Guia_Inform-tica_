@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Requisitar assistência</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header_functions">
+      <nav>
+        <div class="logo">
+          <div class="logoLogo">
+            <a href="index.html">
+              <img src="img/logoPi.png" alt="imagemteste">
+            </a>
+          </div>  
+          <div class="textLogo">
+            <p>
+              Guia do Aluno do Técnico Integrado
+            </p>
+          </div>
+        </div>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+          <li><a href="guiaPaz.html">Guia da Paz</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="caminho">
+      <ul>
+        <li><a href="index.html">Página inicial</a></li>
+        <li>&gt;</li>
+        <li><a href="#">Guia da Paz</a></li>
+        <li>&gt;</li>
+        <li><a href="">Requisitar assistência</a></li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <section class="definicao">
+      <h1>
+        Requisitar assistência
+      </h1>
+      <P>
+        Preencha o seguinte formulário com uma breve descrição da situação que será encaminhada para um profissional mediador do conflito. Sempre atento para que as conversas permaneçam respeitosas e construtivas.
+      </P>
+    </section>
+    <section class="formAss">
+      <form id="formulario">
+        <label for="nome">Nome Completo</label>
+        <input type="text" name="nome" id="" required>
+        <label for="eMail">E-mail</label>
+        <input type="email" name="eMail" id="" required>
+        <label for="nMat">Número de Matrícula</label>
+        <input type="text" name="nMat" id="" required>
+        <label for="dataN">Data de Nascimento</label>
+        <input type="date" name="dataN" id="" required>
+        <label for="tel">Telefone: (opcional)</label>
+        <input type="tel" name="tel" id="">
+        <label for="for">Direcionar para:</label>
+        <select id="" name="for" required>
+          <option value="">Selecione</option>
+          <option value="DG">Diretor Geral</option>
+          <option value="CC">Coordenador do Curso</option>
+          <option value="LT">Líder de Turma</option>
+        </select>
+        <label for="tipo">Tipo de conflito</label>
+        <select id="" name="tipo" required>
+          <option value="">Selecione</option>
+          <option value="FA">Fofoca entre alunos</option>
+          <option value="CP">Conflitos com professores</option>
+          <option value="IF">Interferência da vida familiar nos estudos</option>
+          <option value="BL">Bullying</option>
+          <option value="MD">Mal desempenho escolar</option>
+          <option value="CS">Conflitos de sala de aula</option>
+          <option value="CC">Conflitos de valores culturais e éticos</option>
+          <option value="CT">Conflitos relacionados à competição acadêmica ou esportiva</option>
+          <option value="CV">Conflitos entre servidores</option>
+          <option value="CE">Conflitos entre pais e escola</option>
+          <option value="CO">Conflitos Relacionados a Recursos e Orçamento</option>
+          <option value="CB">Conflitos online e cyberbullying</option>
+          <option value="CD">Conflitos envolvendo discriminação e preconceitos</option>
+        </select>
+
+        <label for="desc">Descreva brevemente a situação ou o problema para o qual você precisa de assistência:</label>
+        <textarea id="descreva" placeholder="Digite sua mensagem aqui..."></textarea>
+        <p>
+          Ao enviar este formulário, você concorda em fornecer informações precisas e verdadeiras. Nós iremos tratar suas informações com confidencialidade e utilizá-las apenas para fornecer assistência.
+        </p>
+        
+        <input type="checkbox" name="conc" id="selecione">
+        <label class="checkbox-container" for="selecione">Eu concordo com os termos e condições.</label>
+      </form>
+    </section>
+    <section>
+      <div class="textButtonForm">
+        <button type="button" onclick="limparFormulario()">
+          Limpar formulário
+        </button>
+        <button type="submit">
+          Requisitar assistência
+        </button>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="conteudoFooter">
+      © Curso Técnico em Informática - IFPA Breves - 2023
+    </div>
+  </footer>
+  <script src="script/script.js"></script>
+</body>
+</html>
