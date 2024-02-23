@@ -330,7 +330,7 @@ div.textButton button {
   color: white;
   border: none;
   border-radius: 40px;
-  width: 30%;
+  width: 40%;
   padding: 0px 20px;
   height: 45px;
   cursor: pointer;
@@ -1747,6 +1747,7 @@ div.descricaoServidorSome p {
   
   div.textButton button {
     margin-top: 20px;
+    width: 50%;
   }
 
   footer {
