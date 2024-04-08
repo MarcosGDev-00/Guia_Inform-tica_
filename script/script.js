@@ -11,6 +11,19 @@ function toggleAccordion(element) {
   }
 }
 
+function toggleAccordionPerguntas(element) {
+  var itemPerguntas = element.parentNode;
+  var bodyPerguntas = itemPerguntas.querySelector('.accordion-item-bodyPerguntas');
+
+  var isOpenPerguntas = itemPerguntas.classList.toggle('open');
+
+  if (isOpenPerguntas) {
+    bodyPerguntas.style.height = bodyPerguntas.scrollHeight + 'px';
+  } else {
+    bodyPerguntas.style.height = '0';
+  }
+}
+
 var counter = 1;
 setInterval(function () {
   document.getElementById('radio' + counter).checked = true;
